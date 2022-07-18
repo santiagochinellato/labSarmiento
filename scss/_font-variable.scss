@@ -1,0 +1,86 @@
+// fonts
+
+// imports
+// POPPINS BLACK
+@font-face {
+  font-family: "poppins-black";
+  src: url(../fonts/Poppins-Black.ttf) format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+// POPPINS BOLD
+@font-face {
+  font-family: "poppins-bold";
+  src: url(../fonts/Poppins-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+// POPPINS MEDIUM
+@font-face {
+  font-family: "poppins-medium";
+  src: url(../fonts/Poppins-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+// POPPINS  REGULAR
+@font-face {
+  font-family: "poppins-regular";
+  src: url(../fonts/Poppins-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+// POPPINS ITALIC
+@font-face {
+  font-family: "poppins-italic";
+  src: url(../fonts/Poppins-Italic.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+// POPPINS LIGHT
+@font-face {
+  font-family: "poppins-light";
+  src: url(../fonts/Poppins-Light.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+// TITULO
+$titulo: "poppins-black";
+$tituloSize: 4rem;
+$tituloSizeMobile: 1.5rem;
+
+// SUBITITULO
+$subtitulo: "poppins-bold";
+$subtituloSize: 1.3rem;
+$subtituloSizeMobile: 1.3rem;
+
+// MENU
+$menu: "poppins-medium";
+$menuSize: 1rem;
+$menuSizeMobile: 1rem;
+
+// TEXTO
+$texto: "poppins-regular";
+$textoSize: 1rem;
+$textoSizeMobile: 1rem;
+
+// TEXTO LIGHT
+$textoLight: "poppins-light";
+$textoLightSize: 1rem;
+$textoLightSizeMobile: 1rem;
+
+// TEXTO LIGHT
+$textoLight: "poppins-light";
+$textoLightSize: 1rem;
+$textoLightSizeMobile: 1rem;
+
+// COLORES
+$colorPrimary: #007462;
+$colorSecondary: #1d71b8;
+$colorTexto: #1d1d1b;
+$colorAcento: #989999;

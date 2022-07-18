@@ -1,0 +1,63 @@
+@import "font-variable";
+
+.mision {
+  height: auto;
+  margin-bottom: 100px;
+  .contenedorMision {
+    border-left: 4px solid $colorTexto;
+    margin: 10% 0 10% 4%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 0.5fr 10% 40% 15%;
+    grid-template-areas:
+      "titulo imagen"
+      "subtitulo imagen"
+      "texto imagen"
+      "certificado imagen";
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    .tituloMision {
+      margin-left: 20px;
+      grid-area: titulo;
+      font-family: $titulo;
+      font-size: $tituloSize;
+      margin-bottom: 20px;
+      // width: 80%;
+    }
+    .subtituloMision {
+      margin-left: 20px;
+      grid-area: subtitulo;
+      font-family: $subtitulo;
+      font-size: $subtituloSize;
+      // width: 80%;
+    }
+    .contenedorTextos {
+      // width: 80%;
+      grid-area: texto;
+      font-family: $texto;
+      font-size: $textoSize;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin: 20px 0px;
+      p {
+        margin-left: 20px;
+      }
+    }
+    .certificado {
+      grid-area: certificado;
+      width: 250px;
+      margin: 20px 20px;
+    }
+    .imagenMision {
+      grid-area: imagen;
+      margin-left: 5%;
+      // width: auto;
+      height: 180%;
+      object-fit: contain;
+    }
+  }
+}
