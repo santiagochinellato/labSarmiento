@@ -99,7 +99,7 @@
 
     .card {
       width: 23%;
-      height: 38vh;
+      height: 45vh;
       border: 3px solid white;
       background-color: transparent;
 
@@ -120,7 +120,7 @@
       }
 
       a {
-        width: 80%;
+        width: 95%;
         margin: 0 auto;
         button {
           padding: 0 auto;
@@ -158,7 +158,7 @@
       button::after {
         content: "\F138";
         position: relative;
-        top: 0%;
+        top: 33%;
         margin-left: 4%;
         transform: translate(-17px, -50%);
         display: inline-block;

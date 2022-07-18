@@ -1,8 +1,89 @@
 @import "font-variable";
 
-.contacto {
-  position: relative;
+.contactoForm {
+  // position: relative;
   background-image: url("../images/mapa.png");
   background-size: cover;
-  height: 1000px;
+  height: 100vh;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .formulario {
+    width: 45%;
+    height: 95%;
+    background: linear-gradient(89.43deg, #007462 0.54%, #1d71b8 155.21%);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      // align-items: center;
+
+      h2 {
+        font-family: $titulo;
+        font-size: 2.3rem;
+        color: $colorTexto;
+        margin: 5% 0 15px 0;
+        text-align: center;
+        color: white;
+      }
+      h6 {
+        font-family: $subtitulo;
+        width: 80%;
+        text-align: center;
+        margin: 0% auto 5% auto;
+        color: white;
+        font-size: $subtituloSize;
+      }
+    }
+    .contenedorInputs {
+      width: 70%;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      .form-control {
+        width: 100%;
+        margin: 0% auto;
+        background-color: transparent;
+        border: none;
+        border-bottom: 3px solid white;
+        border-radius: 0%;
+        color: white;
+        font-family: $texto;
+        font-size: $textoSize;
+      }
+      .form-control::placeholder {
+        color: rgba(255, 255, 255, 0.578);
+      }
+    }
+    .contacto-formulario-boton {
+      margin: 0% auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      width: 200px;
+      font-weight: 600;
+      height: 40px;
+      border: 3px solid white;
+      background-color: transparent;
+      cursor: pointer;
+      color: white;
+      font-size: $textoSize;
+      transition: background-color 0.25s, padding-right 0.25s;
+      text-align: center;
+    }
+    .contacto-formulario-boton:hover {
+      background-color: white;
+      color: #007462;
+    }
+  }
 }

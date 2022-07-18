@@ -1,0 +1,67 @@
+@import "font-variable";
+
+.iconosFlotantes {
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+  height: 40vh;
+  position: fixed;
+  margin: auto;
+  top: 40%;
+  right: 3%;
+  gap: 5%;
+  z-index: 1000000;
+  .iconoFlotante {
+    background-image: url("../images/hexa.png");
+    width: 56px;
+    height: 56px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    filter: drop-shadow(5px 5px 5px #222);
+
+    a .face {
+      z-index: 200;
+      color: white;
+      position: relative;
+      font-size: 1.8rem;
+      bottom: -20%;
+      right: 20%;
+      color: #007462;
+    }
+    a .insta {
+      z-index: 200;
+      color: white;
+      position: relative;
+      font-size: 1.8rem;
+      // bottom: -50%;
+      right: 12%;
+      color: #007462;
+    }
+    a .whats {
+      z-index: 200;
+      color: white;
+      position: relative;
+      font-size: 1.8rem;
+      // bottom: -12%;
+      right: 10%;
+      color: #007462;
+    }
+  }
+  .iconoFlotante:hover {
+    background-image: url("../images/hexaColor.png");
+
+    a .face {
+      color: white;
+    }
+    a .insta {
+      color: white;
+    }
+    a .whats {
+      color: white;
+    }
+  }
+}

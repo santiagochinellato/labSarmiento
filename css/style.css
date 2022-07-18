@@ -182,7 +182,7 @@
   height: 2em;
   margin: 0 20px;
   position: relative;
-  background-color: #073459;
+  background-color: white;
 }
 
 .carousel .carousel-indicators button:before {
@@ -369,7 +369,7 @@
 .mision .contenedorMision .imagenMision {
   grid-area: imagen;
   margin-left: 5%;
-  height: 180%;
+  height: 100%;
   object-fit: contain;
 }
 
@@ -517,7 +517,7 @@
 
 .resultados .contenedorCards .card {
   width: 23%;
-  height: 38vh;
+  height: 45vh;
   border: 3px solid white;
   background-color: transparent;
 }
@@ -540,7 +540,7 @@
 }
 
 .resultados .contenedorCards .card a {
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -581,7 +581,7 @@
 .resultados .contenedorCards .card button::after {
   content: "\F138";
   position: relative;
-  top: 0%;
+  top: 33%;
   margin-left: 4%;
   transform: translate(-17px, -50%);
   display: inline-block;
@@ -640,7 +640,7 @@
 }
 
 .sucursales {
-  height: 80vh;
+  height: 100%;
 }
 
 .sucursales h2 {
@@ -660,7 +660,7 @@
 }
 
 .sucursales .contenedorSucursales {
-  margin: 5% 4%;
+  margin: 5% 4% 10% 4%;
 }
 
 .sucursales .contenedorSucursales .cardSucursales {
@@ -856,11 +856,96 @@
   font-style: normal;
 }
 
-.contacto {
-  position: relative;
+.contactoForm {
   background-image: url("../images/mapa.png");
   background-size: cover;
-  height: 1000px;
+  height: 100vh;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactoForm .formulario {
+  width: 45%;
+  height: 95%;
+  background: linear-gradient(89.43deg, #007462 0.54%, #1d71b8 155.21%);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.contactoForm .formulario form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.contactoForm .formulario form h2 {
+  font-family: "poppins-black";
+  font-size: 2.3rem;
+  color: #1d1d1b;
+  margin: 5% 0 15px 0;
+  text-align: center;
+  color: white;
+}
+
+.contactoForm .formulario form h6 {
+  font-family: "poppins-bold";
+  width: 80%;
+  text-align: center;
+  margin: 0% auto 5% auto;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.contactoForm .formulario .contenedorInputs {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.contactoForm .formulario .contenedorInputs .form-control {
+  width: 100%;
+  margin: 0% auto;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid white;
+  border-radius: 0%;
+  color: white;
+  font-family: "poppins-regular";
+  font-size: 1rem;
+}
+
+.contactoForm .formulario .contenedorInputs .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.578);
+}
+
+.contactoForm .formulario .contacto-formulario-boton {
+  margin: 0% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 200px;
+  font-weight: 600;
+  height: 40px;
+  border: 3px solid white;
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+  font-size: 1rem;
+  transition: background-color 0.25s, padding-right 0.25s;
+  text-align: center;
+}
+
+.contactoForm .formulario .contacto-formulario-boton:hover {
+  background-color: white;
+  color: #007462;
 }
 
 @font-face {
@@ -903,6 +988,229 @@
   src: url(../fonts/Poppins-Light.ttf) format("truetype");
   font-weight: 400;
   font-style: normal;
+}
+
+footer {
+  height: 40vh;
+  background: linear-gradient(89.43deg, #007462 0.54%, #1d71b8 155.21%);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 3%;
+}
+
+footer img {
+  width: 10%;
+  align-self: flex-start;
+}
+
+footer .linksFooter {
+  font-family: "poppins-regular";
+  color: white;
+  font-size: 1rem;
+  align-self: flex-start;
+}
+
+footer .linksFooter h6 {
+  font-size: 1.1rem;
+  font-family: "poppins-bold";
+}
+
+footer .linksFooter ul {
+  padding: 0% !important;
+}
+
+footer .linksFooter ul li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+footer .redesFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+}
+
+footer .redesFooter h6 {
+  font-size: 1.1rem;
+  font-family: "poppins-bold";
+  color: white;
+}
+
+footer .redesFooter .containerRedesFooter {
+  margin-top: 10%;
+  display: flex;
+}
+
+footer .redesFooter .containerRedesFooter .divRedesFooter {
+  width: 1.1em;
+  height: 2em;
+  margin: 0 20px;
+  position: relative;
+  background-color: white;
+}
+
+footer .redesFooter .containerRedesFooter .divRedesFooter a i {
+  z-index: 200;
+  color: #007462;
+  position: relative;
+  font-size: 1.4rem;
+  margin: auto;
+  bottom: 5%;
+  right: 12%;
+}
+
+footer .redesFooter .containerRedesFooter .divRedesFooter a .faceFooter {
+  z-index: 200;
+  color: #007462;
+  position: relative;
+  font-size: 1.4rem;
+  margin: auto;
+  bottom: -15%;
+  right: -5%;
+}
+
+footer .redesFooter .containerRedesFooter .divRedesFooter:before {
+  background: inherit;
+  content: "";
+  height: 100%;
+  position: absolute;
+  transform: rotate(-60deg);
+  transform-origin: 50% 50%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+footer .redesFooter .containerRedesFooter .divRedesFooter:after {
+  background: inherit;
+  content: "";
+  height: 100%;
+  position: absolute;
+  transform: rotate(60deg);
+  transform-origin: 50% 50%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+@font-face {
+  font-family: "poppins-black";
+  src: url(../fonts/Poppins-Black.ttf) format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppins-bold";
+  src: url(../fonts/Poppins-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppins-medium";
+  src: url(../fonts/Poppins-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppins-regular";
+  src: url(../fonts/Poppins-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppins-italic";
+  src: url(../fonts/Poppins-Italic.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppins-light";
+  src: url(../fonts/Poppins-Light.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.iconosFlotantes {
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+  height: 40vh;
+  position: fixed;
+  margin: auto;
+  top: 40%;
+  right: 3%;
+  gap: 5%;
+  z-index: 1000000;
+}
+
+.iconosFlotantes .iconoFlotante {
+  background-image: url("../images/hexa.png");
+  width: 56px;
+  height: 56px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+.iconosFlotantes .iconoFlotante a .face {
+  z-index: 200;
+  color: white;
+  position: relative;
+  font-size: 1.8rem;
+  bottom: -20%;
+  right: 20%;
+  color: #007462;
+}
+
+.iconosFlotantes .iconoFlotante a .insta {
+  z-index: 200;
+  color: white;
+  position: relative;
+  font-size: 1.8rem;
+  right: 12%;
+  color: #007462;
+}
+
+.iconosFlotantes .iconoFlotante a .whats {
+  z-index: 200;
+  color: white;
+  position: relative;
+  font-size: 1.8rem;
+  right: 10%;
+  color: #007462;
+}
+
+.iconosFlotantes .iconoFlotante:hover {
+  background-image: url("../images/hexaColor.png");
+}
+
+.iconosFlotantes .iconoFlotante:hover a .face {
+  color: white;
+}
+
+.iconosFlotantes .iconoFlotante:hover a .insta {
+  color: white;
+}
+
+.iconosFlotantes .iconoFlotante:hover a .whats {
+  color: white;
 }
 
 * {

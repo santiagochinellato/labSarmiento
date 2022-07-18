@@ -1,7 +1,9 @@
 @import "font-variable";
 
 .sucursales {
-  height: 80vh;
+  height: 100%;
+  // position: relative;
+
   h2 {
     margin: 5% auto 15px auto;
     font-family: $titulo;
@@ -17,7 +19,8 @@
     color: $colorTexto;
   }
   .contenedorSucursales {
-    margin: 5% 4%;
+    margin: 5% 4% 10% 4%;
+    // padding-bottom: 5%;
     .cardSucursales {
       display: flex;
       flex-direction: row;
