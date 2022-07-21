@@ -99,3 +99,105 @@
     background-image: url("../images/right-arrow.png");
   }
 }
+
+@media only screen and (min-width: $desktopSmall) and (max-width: $desktop) {
+  .carousel {
+    height: 100% !important;
+    margin-top: 2.4%;
+
+    .carousel-indicators {
+      button {
+        width: 1em;
+        height: 1.7em;
+        margin: 0 20px;
+        position: relative;
+        background-color: white;
+      }
+      button:before {
+        background: inherit;
+        content: "";
+        height: 95%;
+        position: absolute;
+        transform: rotate(-60deg);
+        transform-origin: 50% 50%;
+        width: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+      button:after {
+        background: inherit;
+        content: "";
+        height: 95%;
+        position: absolute;
+        transform: rotate(60deg);
+        transform-origin: 50% 50%;
+        width: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+    }
+
+    .carousel-inner {
+      .carousel-item {
+        img {
+          width: 100vw !important;
+          height: 95vh !important;
+          display: none;
+        }
+        .carousel-caption {
+          margin-bottom: 5%;
+          margin-left: -11%;
+          width: 500px;
+          height: 60vh;
+          border-left: 3px solid white;
+          display: flex !important;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          align-content: center;
+
+          h5 {
+            width: 70%;
+            font-family: $titulo;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: white;
+            text-align: start;
+            margin-bottom: 30px;
+            margin-left: 20px;
+          }
+          p {
+            width: 80%;
+            font-family: $texto;
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: white;
+            text-align: start;
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+
+    .carousel-control-prev {
+      top: 85%;
+      left: 30%;
+      z-index: 10000;
+      .carousel-control-prev-icon {
+        background-image: url("../images/left-arrow.png");
+      }
+    }
+    .carousel-control-next {
+      top: 85%;
+      right: 30%;
+      z-index: 10000;
+    }
+    .carousel-control-next-icon {
+      background-image: url("../images/right-arrow.png");
+    }
+  }
+}

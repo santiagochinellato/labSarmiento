@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/434b1238ad.js" crossorigin="anonymous"></script>
+  <!-- slick carousel -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
   <title>Document</title>
 </head>
@@ -23,9 +25,12 @@
         <a class="navbar-brand" href="#">
           <img class="logoNavbar" src="./images/LogoLabSarmiento.png" alt="">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        <button class="navbar-toggler  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
@@ -324,20 +329,52 @@
           <h2>Contacto</h2>
           <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, dolore.</h6>
           <div class="  con-f con-f2 contenedorInputs">
-            <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp" name="nombre"
-              placeholder="Nombre y Apellido" required>
+            <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp" name="nombre" required>
+            <label>
+              <span style=" transition-delay: 0ms;">N</span>
+              <span style=" transition-delay: 50ms;">o</span>
+              <span style=" transition-delay: 100ms;">m</span>
+              <span style=" transition-delay: 150ms;">b</span>
+              <span style=" transition-delay: 200ms;">r</span>
+              <span style=" transition-delay: 250ms;">e</span>
+            </label>
           </div>
           <div class="  con-f contenedorInputs">
-            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email"
-              placeholder=" E-mail" required>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" required>
+            <label>
+              <span style=" transition-delay: 0ms;">E</span>
+              <span style=" transition-delay: 50ms;">-</span>
+              <span style=" transition-delay: 100ms;">m</span>
+              <span style=" transition-delay: 150ms;">a</span>
+              <span style=" transition-delay: 200ms;">i</span>
+              <span style=" transition-delay: 250ms;">l</span>
+            </label>
           </div>
           <div class="  con-f contenedorInputs">
-            <input type="number" class="form-control" id="telefono" aria-describedby="emailHelp" placeholder="Teléfono"
-              name="telefono" required>
+            <input type="number" class="form-control" id="telefono" aria-describedby="emailHelp" name="telefono"
+              required>
+            <label>
+              <span style=" transition-delay: 0ms;">T</span>
+              <span style=" transition-delay: 50ms;">e</span>
+              <span style=" transition-delay: 100ms;">l</span>
+              <span style=" transition-delay: 150ms;">é</span>
+              <span style=" transition-delay: 200ms;">f</span>
+              <span style=" transition-delay: 250ms;">o</span>
+              <span style=" transition-delay: 300ms;">n</span>
+              <span style=" transition-delay: 350ms;">o</span>
+            </label>
           </div>
           <div class="  con-f contenedorInputs">
-            <textarea class="form-control" id="textarea" rows="3" placeholder="Escriba su consulta" name="mensaje"
-              required></textarea>
+            <textarea class="form-control" id="textarea" rows="3" name="mensaje" required></textarea>
+            <label>
+              <span style=" transition-delay: 0ms;">M</span>
+              <span style=" transition-delay: 50ms;">e</span>
+              <span style=" transition-delay: 100ms;">n</span>
+              <span style=" transition-delay: 150ms;">s</span>
+              <span style=" transition-delay: 200ms;">a</span>
+              <span style=" transition-delay: 250ms;">j</span>
+              <span style=" transition-delay: 300ms;">e</span>
+            </label>
           </div>
           <input type="submit" class="btn btn-primary contacto-formulario-boton" value="Enviar" id="btn-form">
         </form>
@@ -375,7 +412,17 @@
       </div>
     </div>
   </footer>
-
+  <section class="bottomBar">
+    <div>
+      <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+      <a href=""><i class="fa-brands fa-instagram"></i></a>
+      <a class="nav-link "><button class="botonResultadosMobile">RESULTADOS</button></a>
+      <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+      <a href=""><i class="fa-solid fa-phone"></i></a>
+    </div>
+  </section>
+  <!-- slick carousel -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"

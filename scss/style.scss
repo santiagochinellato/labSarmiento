@@ -8,9 +8,27 @@
 @import "contacto";
 @import "footer";
 @import "botonesFlotantes";
+@import "bottomBar";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+select,
+input.form-control:focus,
+textarea.form-control:focus {
+  outline: none !important;
+
+  outline-width: 0 !important;
+
+  box-shadow: none;
+
+  -moz-box-shadow: none;
+
+  -webkit-box-shadow: none;
 }

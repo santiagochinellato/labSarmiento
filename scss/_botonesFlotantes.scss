@@ -65,3 +65,9 @@
     }
   }
 }
+
+@media only screen and (min-width: $celular) and (max-width: $celularSmall) {
+  .iconosFlotantes {
+    display: none;
+  }
+}

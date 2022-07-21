@@ -21,7 +21,7 @@
     font-size: $subtituloSize;
     text-align: center;
     color: white;
-    width: 40%;
+    width: 50%;
     margin: 0 auto;
   }
 
@@ -95,32 +95,35 @@
   .contenedorCards {
     display: flex;
     justify-content: center;
-    column-gap: 5%;
+    column-gap: 3%;
 
     .card {
-      width: 23%;
-      height: 45vh;
+      width: 25%;
+      height: 53vh;
       border: 3px solid white;
       background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
       h6 {
         font-family: $subtitulo;
         font-size: 1.8rem;
         color: white;
         text-align: center;
-        margin: 20px auto;
+        margin: 10% auto;
       }
       p {
         font-family: $texto;
         font-size: $textoSize;
         color: white;
         text-align: center;
-        margin: 20px auto;
+        margin: 0% auto 10%;
         width: 85%;
       }
 
       a {
-        width: 95%;
+        width: 100%;
         margin: 0 auto;
         button {
           padding: 0 auto;
@@ -171,6 +174,189 @@
       button:hover::after {
         transform: translate(5px, -50%);
         opacity: 1;
+      }
+    }
+  }
+}
+
+// media query
+
+@media only screen and (min-width: $desktopSmall) and (max-width: $desktop) {
+  .resultados {
+    height: auto;
+
+    background: #007462;
+    backdrop-filter: blur(41px);
+    padding-bottom: 5%;
+    .tituloResultados {
+      padding: 5% 0 15px 0;
+      font-family: $titulo;
+      font-size: 3.5rem;
+      text-align: center;
+      color: white;
+      width: 80%;
+      margin: 0 auto;
+    }
+    .subtituloResultados {
+      padding: 0 0 15px 0;
+      font-family: $subtitulo;
+      font-size: 1.1rem;
+      text-align: center;
+      color: white;
+      width: 60%;
+      margin: 0 auto;
+    }
+
+    .contenedorAnimacion {
+      padding: 65px 0;
+      .center {
+        // padding: 50vh 0;
+        margin: 0 auto;
+      }
+
+      .heart-rate {
+        transform: scale(2.5);
+        width: 200px;
+        height: 40px;
+        position: relative;
+        margin: -40px auto 0;
+        overflow: hidden;
+      }
+
+      .fadeIn {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #007462;
+        top: 0;
+        right: 0;
+        animation: heartRateIn 2.5s linear infinite;
+      }
+
+      .fadeOut {
+        position: absolute;
+        width: 120%;
+        height: 100%;
+        top: 0;
+        left: -120%;
+        animation: heartRateOut 2.5s linear infinite;
+        background: #007462;
+        // background: linear-gradient(89.93deg, #007462 0.07%, #1d71b8 229.05%);
+      }
+
+      @keyframes heartRateIn {
+        0% {
+          width: 100%;
+        }
+        50% {
+          width: 0;
+        }
+        100% {
+          width: 0;
+        }
+      }
+
+      @keyframes heartRateOut {
+        0% {
+          left: -120%;
+        }
+        30% {
+          left: -120%;
+        }
+        100% {
+          left: 0;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .heart-rate {
+          transform: scale(1);
+        }
+      }
+    }
+    .contenedorCards {
+      display: flex;
+      justify-content: center;
+      column-gap: 3%;
+
+      .card {
+        width: 25%;
+        height: 45vh;
+        border: 3px solid white;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h6 {
+          font-family: $subtitulo;
+          font-size: 1.6rem;
+          color: white;
+          text-align: center;
+          margin: 10% auto;
+        }
+        p {
+          font-family: $texto;
+          font-size: 0.8rem;
+          color: white;
+          text-align: center;
+          margin: 0% auto 5%;
+          width: 85%;
+        }
+
+        a {
+          width: 100%;
+          margin: 0 auto;
+          button {
+            padding: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            width: 100%;
+            font-weight: 600;
+            height: 40px;
+            border: 3px solid white;
+            background-color: transparent;
+            cursor: pointer;
+            color: white;
+            font-size: $textoSize;
+            transition: background-color 0.25s, padding-right 0.25s;
+            text-align: center;
+
+            p {
+              width: 50%;
+              margin: 0%;
+              margin-left: 20px;
+            }
+          }
+          button:hover p {
+            color: #007462;
+          }
+        }
+        button:hover {
+          background-color: white;
+          color: #007462;
+          padding-right: 35px;
+        }
+
+        button::after {
+          content: "\F138";
+          position: relative;
+          top: 33%;
+          margin-left: 4%;
+          transform: translate(-17px, -50%);
+          display: inline-block;
+          font-family: "Bootstrap-icons";
+          font-weight: 100;
+          opacity: 0;
+          transition: transform 0.25s;
+          opacity: 0.25s;
+        }
+        button:hover::after {
+          transform: translate(5px, -50%);
+          opacity: 1;
+        }
       }
     }
   }
