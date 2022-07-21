@@ -1,14 +1,21 @@
 @import "font-variable";
 
+.bottomBar {
+  display: none;
+}
+
 @media only screen and (min-width: $celular) and (max-width: $celularSmall) {
   .bottomBar {
+    display: inline;
     width: 100%;
     height: 10vh;
-    position: fixed !important;
+    position: fixed;
     bottom: 0px;
     z-index: 1000000;
     box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
     background-color: white;
+    display: flex;
+    justify-content: center;
     div {
       display: flex;
       justify-content: center;
@@ -17,6 +24,16 @@
       a i {
         color: $colorPrimary;
         font-size: 1.5rem;
+      }
+      a .botonresultadosMobile {
+        width: 150px;
+        height: 40px;
+        margin: 0%;
+        background: linear-gradient(270.1deg, #007462 19.07%, #1d71b8 185.03%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        color: white;
+        border: none;
       }
     }
   }
