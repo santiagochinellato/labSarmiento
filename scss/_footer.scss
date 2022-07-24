@@ -206,3 +206,30 @@ footer {
     }
   }
 }
+
+@media only screen and (min-width: $celular) and (max-width: $tablet) {
+  footer {
+    height: 100%;
+    background: linear-gradient(89.43deg, #007462 0.54%, #1d71b8 155.21%);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 3%;
+    padding-bottom: 70px;
+
+    img {
+      width: 30%;
+      align-self: flex-start;
+      margin: 0 auto;
+    }
+    .linksFooter {
+      display: none;
+    }
+    .redesFooter {
+      display: none;
+    }
+  }
+}

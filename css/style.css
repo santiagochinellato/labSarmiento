@@ -1435,11 +1435,13 @@
   }
   .resultados .contenedorCards {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    column-gap: 3%;
+    column-gap: 2%;
+    margin: 0 auto;
   }
   .resultados .contenedorCards .card {
-    width: 25%;
+    width: 27%;
     height: 45vh;
     border: 3px solid white;
     background-color: transparent;
@@ -1534,7 +1536,7 @@
   .resultados .subtituloResultados {
     padding: 0 0 15px 0;
     font-family: "poppins-bold";
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: center;
     color: white;
     width: 90%;
@@ -2070,6 +2072,334 @@
   }
 }
 
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .sucursales {
+    overflow: hidden !important;
+    height: 100%;
+    margin: 20% 0% 0% 0%;
+  }
+  .sucursales h2 {
+    margin: 5% auto 15px auto;
+    font-family: "poppins-black";
+    text-align: center;
+    font-size: 2.5rem;
+    color: #1d1d1b;
+  }
+  .sucursales h6 {
+    margin: 0% auto 5% auto;
+    font-family: "poppins-bold";
+    text-align: center;
+    font-size: 1rem;
+    color: #1d1d1b;
+  }
+  .sucursales .contenedorSucursales {
+    overflow: hidden;
+    margin: 10% 4% 10% 4%;
+  }
+  .sucursales .contenedorSucursales .cardSucursales {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5%;
+    justify-content: center;
+    align-items: center;
+    margin: 15% 0;
+  }
+  .sucursales .contenedorSucursales .cardSucursales img {
+    width: 80vw;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    left: 0%;
+    max-width: 300px;
+  }
+  .sucursales .contenedorSucursales .cardSucursales .infoSucursales {
+    background: rgba(255, 255, 255, 0.7);
+    width: auto;
+    height: 100%;
+    border-left: 3px solid #1d1d1b;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    align-items: flex-start;
+  }
+  .sucursales .contenedorSucursales .cardSucursales .infoSucursales h4 {
+    margin-left: 3%;
+    margin-bottom: 3%;
+    font-family: "poppins-bold";
+    font-size: 1.3rem;
+  }
+  .sucursales .contenedorSucursales .cardSucursales .infoSucursales p {
+    margin-left: 3%;
+    margin-bottom: 3%;
+    font-family: "poppins-regular";
+    font-size: 0.8rem;
+    width: 100%;
+  }
+  .sucursales .contenedorSucursales .cardSucursales .infoSucursales .contenedorInformacion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 3%;
+  }
+  .sucursales .contenedorSucursales .cardSucursales .infoSucursales .contenedorInformacion div a {
+    text-decoration: none;
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .sucursales .contenedorSucursales .cardSucursales .infoSucursales .contenedorInformacion div a div {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #007462;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #007462;
+  }
+  .sucursales .contenedorSucursales .cardSucursales .infoSucursales .contenedorInformacion div a p {
+    padding-left: 20px;
+    margin: 0;
+    color: black;
+    font-family: "poppins-regular";
+    font-size: 0.8rem;
+  }
+  .sucursales .contenedorSucursales .cardSucursalesDos {
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 5%;
+    justify-content: center;
+    align-items: center;
+    margin: 15% 0;
+  }
+  .sucursales .contenedorSucursales .cardSucursalesDos img {
+    width: 80vw;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    right: 0%;
+    max-width: 300px;
+  }
+  .sucursales .contenedorSucursales .cardSucursalesDos .infoSucursales {
+    background: rgba(255, 255, 255, 0.7);
+    width: auto;
+    height: 100%;
+    border-right: 3px solid #1d1d1b;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    align-items: flex-start;
+  }
+  .sucursales .contenedorSucursales .cardSucursalesDos .infoSucursales h4 {
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    font-family: "poppins-bold";
+    font-size: 1.3rem;
+  }
+  .sucursales .contenedorSucursales .cardSucursalesDos .infoSucursales p {
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    font-family: "poppins-regular";
+    font-size: 0.8rem;
+    width: 90%;
+  }
+  .sucursales .contenedorSucursales .cardSucursalesDos .infoSucursales .contenedorInformacion {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .sucursales .contenedorSucursales .cardSucursalesDos .infoSucursales .contenedorInformacion div a {
+    text-decoration: none;
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .sucursales .contenedorSucursales .cardSucursalesDos .infoSucursales .contenedorInformacion div a div {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #007462;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #007462;
+  }
+  .sucursales .contenedorSucursales .cardSucursalesDos .infoSucursales .contenedorInformacion div a p {
+    padding-left: 20px;
+    margin: 0;
+    color: black;
+    font-family: "poppins-regular";
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .sucursales {
+    height: 100%;
+  }
+  .sucursales h2 {
+    margin: 5% auto 15px auto;
+    font-family: "poppins-black";
+    text-align: center;
+    font-size: 3.5rem;
+    color: #1d1d1b;
+  }
+  .sucursales h6 {
+    margin: 0% auto 5% auto;
+    font-family: "poppins-bold";
+    text-align: center;
+    font-size: 1.1rem;
+    color: #1d1d1b;
+    width: 70%;
+  }
+  .sucursales .contenedorSucursales {
+    margin: 5% 4% 10% 4%;
+  }
+  .sucursales .contenedorSucursales .cardSucursales {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5%;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0;
+  }
+  .sucursales .contenedorSucursales .cardSucursales img {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+  }
+  .sucursales .contenedorSucursales .cardSucursales .infoSucursales {
+    width: 60%;
+    height: 100%;
+    border-left: 3px solid #1d1d1b;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .sucursales .contenedorSucursales .cardSucursales .infoSucursales h4 {
+    margin-left: 5%;
+    margin-bottom: 3%;
+    font-family: "poppins-bold";
+    font-size: 1.6rem;
+  }
+  .sucursales .contenedorSucursales .cardSucursales .infoSucursales p {
+    margin-left: 5%;
+    margin-bottom: 3%;
+    font-family: "poppins-regular";
+    font-size: 0.8rem;
+    width: 80%;
+  }
+  .sucursales .contenedorSucursales .cardSucursales .infoSucursales .contenedorInformacion {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 5%;
+  }
+  .sucursales .contenedorSucursales .cardSucursales .infoSucursales .contenedorInformacion div a {
+    text-decoration: none;
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .sucursales .contenedorSucursales .cardSucursales .infoSucursales .contenedorInformacion div a div {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #007462;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #007462;
+  }
+  .sucursales .contenedorSucursales .cardSucursales .infoSucursales .contenedorInformacion div a p {
+    padding-left: 10px;
+    margin: 0;
+    color: black;
+    font-family: "poppins-regular";
+    font-size: 0.8rem;
+  }
+  .sucursales .contenedorSucursales .cardSucursalesDos {
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 5%;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0;
+  }
+  .sucursales .contenedorSucursales .cardSucursalesDos img {
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .sucursales .contenedorSucursales .cardSucursalesDos .infoSucursales {
+    width: 60%;
+    height: 100%;
+    border-right: 3px solid #1d1d1b;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .sucursales .contenedorSucursales .cardSucursalesDos .infoSucursales h4 {
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    font-family: "poppins-bold";
+    font-size: 1.6rem;
+  }
+  .sucursales .contenedorSucursales .cardSucursalesDos .infoSucursales p {
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    font-family: "poppins-regular";
+    font-size: 0.8rem;
+    width: 80%;
+  }
+  .sucursales .contenedorSucursales .cardSucursalesDos .infoSucursales .contenedorInformacion {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 10%;
+    margin-right: 5%;
+  }
+  .sucursales .contenedorSucursales .cardSucursalesDos .infoSucursales .contenedorInformacion div a {
+    text-decoration: none;
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .sucursales .contenedorSucursales .cardSucursalesDos .infoSucursales .contenedorInformacion div a div {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #007462;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #007462;
+  }
+  .sucursales .contenedorSucursales .cardSucursalesDos .infoSucursales .contenedorInformacion div a p {
+    padding-left: 20px;
+    margin: 0;
+    color: black;
+    font-family: "poppins-regular";
+    font-size: 0.8rem;
+  }
+}
+
 @font-face {
   font-family: "poppins-black";
   src: url(../fonts/Poppins-Black.ttf) format("truetype");
@@ -2355,6 +2685,238 @@
   }
 }
 
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .contactoForm {
+    background-image: url("../images/mapa.png");
+    background-size: cover;
+    height: 120vh;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactoForm .formulario {
+    width: 90%;
+    height: 80%;
+    background: linear-gradient(89.43deg, #007462 0.54%, #1d71b8 155.21%);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .contactoForm .formulario form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .contactoForm .formulario form h2 {
+    font-family: "poppins-black";
+    font-size: 2.5rem;
+    color: #1d1d1b;
+    margin: 3% 0 10px 0;
+    text-align: center;
+    color: white;
+  }
+  .contactoForm .formulario form h6 {
+    font-family: "poppins-bold";
+    width: 90%;
+    text-align: center;
+    margin: 0% auto 3% auto;
+    color: white;
+    font-size: 0.9rem;
+  }
+  .contactoForm .formulario .contenedorInputs {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  .contactoForm .formulario .contenedorInputs .form-control {
+    width: 100%;
+    margin: 0% auto;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid white;
+    border-radius: 0%;
+    color: white;
+    font-family: "poppins-regular";
+    font-size: 1rem;
+    display: block;
+  }
+  .contactoForm .formulario .contenedorInputs .form-control:focus,
+  .contactoForm .formulario .contenedorInputs .form-control:valid {
+    outline: 0;
+    border-bottom: 3px solid white;
+    background-color: transparent !important;
+  }
+  .contactoForm .formulario .contenedorInputs label {
+    position: absolute;
+    top: 14px;
+    left: 0;
+    pointer-events: none;
+  }
+  .contactoForm .formulario .contenedorInputs label span {
+    display: inline-block;
+    font-family: "poppins-regular";
+    font-size: 0.8rem;
+    color: white;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .contactoForm .formulario .contenedorInputs input:focus + label span,
+  .contactoForm .formulario .contenedorInputs input:valid + label span {
+    color: white;
+    font-size: 0.8rem;
+    transform: translateY(-30px);
+  }
+  .contactoForm .formulario .contenedorInputs textarea:focus + label span,
+  .contactoForm .formulario .contenedorInputs textarea:valid + label span {
+    color: white;
+    font-size: 0.8rem;
+    transform: translateY(-30px);
+  }
+  .contactoForm .formulario .contacto-formulario-boton {
+    margin: 0% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 200px;
+    font-weight: 600;
+    height: 40px;
+    border: 3px solid white;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    transition: background-color 0.25s, padding-right 0.25s;
+    text-align: center;
+  }
+  .contactoForm .formulario .contacto-formulario-boton:hover {
+    background-color: white;
+    color: #007462;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .contactoForm {
+    background-image: url("../images/mapa.png");
+    background-size: cover;
+    height: 120vh;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactoForm .formulario {
+    width: 60%;
+    height: 80%;
+    background: linear-gradient(89.43deg, #007462 0.54%, #1d71b8 155.21%);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .contactoForm .formulario form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .contactoForm .formulario form h2 {
+    font-family: "poppins-black";
+    font-size: 3.5rem;
+    color: #1d1d1b;
+    margin: 3% 0 10px 0;
+    text-align: center;
+    color: white;
+  }
+  .contactoForm .formulario form h6 {
+    font-family: "poppins-bold";
+    width: 90%;
+    text-align: center;
+    margin: 0% auto 3% auto;
+    color: white;
+    font-size: 1.1rem;
+  }
+  .contactoForm .formulario .contenedorInputs {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  .contactoForm .formulario .contenedorInputs .form-control {
+    width: 100%;
+    margin: 0% auto;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid white;
+    border-radius: 0%;
+    color: white;
+    font-family: "poppins-regular";
+    font-size: 1rem;
+    display: block;
+  }
+  .contactoForm .formulario .contenedorInputs .form-control:focus,
+  .contactoForm .formulario .contenedorInputs .form-control:valid {
+    outline: 0;
+    border-bottom: 3px solid white;
+    background-color: transparent !important;
+  }
+  .contactoForm .formulario .contenedorInputs label {
+    position: absolute;
+    top: 14px;
+    left: 0;
+    pointer-events: none;
+  }
+  .contactoForm .formulario .contenedorInputs label span {
+    display: inline-block;
+    font-family: "poppins-regular";
+    font-size: 0.8rem;
+    color: white;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .contactoForm .formulario .contenedorInputs input:focus + label span,
+  .contactoForm .formulario .contenedorInputs input:valid + label span {
+    color: white;
+    font-size: 0.8rem;
+    transform: translateY(-30px);
+  }
+  .contactoForm .formulario .contenedorInputs textarea:focus + label span,
+  .contactoForm .formulario .contenedorInputs textarea:valid + label span {
+    color: white;
+    font-size: 0.8rem;
+    transform: translateY(-30px);
+  }
+  .contactoForm .formulario .contacto-formulario-boton {
+    margin: 0% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 200px;
+    font-weight: 600;
+    height: 40px;
+    border: 3px solid white;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    transition: background-color 0.25s, padding-right 0.25s;
+    text-align: center;
+  }
+  .contactoForm .formulario .contacto-formulario-boton:hover {
+    background-color: white;
+    color: #007462;
+  }
+}
+
 @font-face {
   font-family: "poppins-black";
   src: url(../fonts/Poppins-Black.ttf) format("truetype");
@@ -2609,6 +3171,32 @@ footer .redesFooter .containerRedesFooter .divRedesFooter:after {
   }
 }
 
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  footer {
+    height: 100%;
+    background: linear-gradient(89.43deg, #007462 0.54%, #1d71b8 155.21%);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 3%;
+    padding-bottom: 70px;
+  }
+  footer img {
+    width: 30%;
+    align-self: flex-start;
+    margin: 0 auto;
+  }
+  footer .linksFooter {
+    display: none;
+  }
+  footer .redesFooter {
+    display: none;
+  }
+}
+
 @font-face {
   font-family: "poppins-black";
   src: url(../fonts/Poppins-Black.ttf) format("truetype");
@@ -2721,7 +3309,7 @@ footer .redesFooter .containerRedesFooter .divRedesFooter:after {
   color: white;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 576px) {
+@media only screen and (min-width: 320px) and (max-width: 992px) {
   .iconosFlotantes {
     display: none;
   }

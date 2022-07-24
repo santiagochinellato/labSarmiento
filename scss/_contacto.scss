@@ -251,3 +251,257 @@
     }
   }
 }
+
+@media only screen and (min-width: $celular) and (max-width: $tablet) {
+  .contactoForm {
+    // position: relative;
+    background-image: url("../images/mapa.png");
+    background-size: cover;
+    height: 120vh;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .formulario {
+      width: 90%;
+      height: 80%;
+      background: linear-gradient(89.43deg, #007462 0.54%, #1d71b8 155.21%);
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+
+      form {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        // align-items: center;
+
+        h2 {
+          font-family: $titulo;
+          font-size: 2.5rem;
+          color: $colorTexto;
+          margin: 3% 0 10px 0;
+          text-align: center;
+          color: white;
+        }
+        h6 {
+          font-family: $subtitulo;
+          width: 90%;
+          text-align: center;
+          margin: 0% auto 3% auto;
+          color: white;
+          font-size: 0.9rem;
+        }
+      }
+      .contenedorInputs {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        position: relative;
+        .form-control {
+          width: 100%;
+          margin: 0% auto;
+          background-color: transparent;
+          border: none;
+          border-bottom: 3px solid white;
+          border-radius: 0%;
+          color: white;
+          font-family: $texto;
+          font-size: $textoSize;
+          display: block;
+        }
+
+        .form-control:focus,
+        .form-control:valid {
+          outline: 0;
+          border-bottom: 3px solid white;
+          background-color: transparent !important;
+        }
+
+        // .form-control::placeholder {
+        //   color: rgba(255, 255, 255, 0.578);
+        // }
+      }
+      .contenedorInputs label {
+        position: absolute;
+        top: 14px;
+        left: 0;
+        pointer-events: none;
+      }
+
+      .contenedorInputs label span {
+        display: inline-block;
+        font-family: $texto;
+        font-size: 0.8rem;
+        color: white;
+        transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+      .contenedorInputs input:focus + label span,
+      .contenedorInputs input:valid + label span {
+        color: white;
+        font-size: 0.8rem;
+        transform: translateY(-30px);
+      }
+      .contenedorInputs textarea:focus + label span,
+      .contenedorInputs textarea:valid + label span {
+        color: white;
+        font-size: 0.8rem;
+        transform: translateY(-30px);
+      }
+      .contacto-formulario-boton {
+        margin: 0% auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 200px;
+        font-weight: 600;
+        height: 40px;
+        border: 3px solid white;
+        background-color: transparent;
+        cursor: pointer;
+        color: white;
+        font-size: $textoSize;
+        transition: background-color 0.25s, padding-right 0.25s;
+        text-align: center;
+      }
+      .contacto-formulario-boton:hover {
+        background-color: white;
+        color: #007462;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: $desktopSmall) {
+  .contactoForm {
+    // position: relative;
+    background-image: url("../images/mapa.png");
+    background-size: cover;
+    height: 120vh;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .formulario {
+      width: 60%;
+      height: 80%;
+      background: linear-gradient(89.43deg, #007462 0.54%, #1d71b8 155.21%);
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+
+      form {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        // align-items: center;
+
+        h2 {
+          font-family: $titulo;
+          font-size: 3.5rem;
+          color: $colorTexto;
+          margin: 3% 0 10px 0;
+          text-align: center;
+          color: white;
+        }
+        h6 {
+          font-family: $subtitulo;
+          width: 90%;
+          text-align: center;
+          margin: 0% auto 3% auto;
+          color: white;
+          font-size: 1.1rem;
+        }
+      }
+      .contenedorInputs {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        position: relative;
+        .form-control {
+          width: 100%;
+          margin: 0% auto;
+          background-color: transparent;
+          border: none;
+          border-bottom: 3px solid white;
+          border-radius: 0%;
+          color: white;
+          font-family: $texto;
+          font-size: $textoSize;
+          display: block;
+        }
+
+        .form-control:focus,
+        .form-control:valid {
+          outline: 0;
+          border-bottom: 3px solid white;
+          background-color: transparent !important;
+        }
+
+        // .form-control::placeholder {
+        //   color: rgba(255, 255, 255, 0.578);
+        // }
+      }
+      .contenedorInputs label {
+        position: absolute;
+        top: 14px;
+        left: 0;
+        pointer-events: none;
+      }
+
+      .contenedorInputs label span {
+        display: inline-block;
+        font-family: $texto;
+        font-size: 0.8rem;
+        color: white;
+        transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+      .contenedorInputs input:focus + label span,
+      .contenedorInputs input:valid + label span {
+        color: white;
+        font-size: 0.8rem;
+        transform: translateY(-30px);
+      }
+      .contenedorInputs textarea:focus + label span,
+      .contenedorInputs textarea:valid + label span {
+        color: white;
+        font-size: 0.8rem;
+        transform: translateY(-30px);
+      }
+      .contacto-formulario-boton {
+        margin: 0% auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 200px;
+        font-weight: 600;
+        height: 40px;
+        border: 3px solid white;
+        background-color: transparent;
+        cursor: pointer;
+        color: white;
+        font-size: $textoSize;
+        transition: background-color 0.25s, padding-right 0.25s;
+        text-align: center;
+      }
+      .contacto-formulario-boton:hover {
+        background-color: white;
+        color: #007462;
+      }
+    }
+  }
+}
