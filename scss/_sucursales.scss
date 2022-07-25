@@ -337,6 +337,7 @@
     margin: 20% 0% 0% 0%;
 
     h2 {
+      width: 95%;
       margin: 5% auto 15px auto;
       font-family: $titulo;
       text-align: center;
@@ -344,6 +345,7 @@
       color: $colorTexto;
     }
     h6 {
+      width: 95%;
       margin: 0% auto 5% auto;
       font-family: $subtitulo;
       text-align: center;
@@ -393,7 +395,7 @@
             margin-bottom: 3%;
             font-family: $texto;
             font-size: 0.8rem;
-            width: 100%;
+            width: 90%;
           }
           .contenedorInformacion {
             width: 100%;

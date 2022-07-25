@@ -257,15 +257,15 @@
     // position: relative;
     background-image: url("../images/mapa.png");
     background-size: cover;
-    height: 120vh;
+    height: 100vh;
     bottom: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 
     .formulario {
       width: 90%;
-      height: 80%;
+      height: 70%;
       background: linear-gradient(89.43deg, #007462 0.54%, #1d71b8 155.21%);
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
       display: flex;
@@ -273,6 +273,7 @@
       justify-content: center;
       align-items: center;
       align-content: center;
+      margin-bottom: 10%;
 
       form {
         height: 100%;

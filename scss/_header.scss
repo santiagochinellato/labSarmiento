@@ -211,7 +211,7 @@
       button {
         width: 0.5em;
         height: 1em;
-        margin: 0 20px 5% 20px;
+        margin: 0 20px 15% 20px;
         position: relative;
         background-color: white;
       }
@@ -251,10 +251,10 @@
           display: none;
         }
         .carousel-caption {
-          margin-bottom: 100px;
+          margin-bottom: 170px;
           margin-left: -5%;
           width: 80%;
-          height: 250px;
+          height: 300px;
           border-left: none;
           border-bottom: 3px solid white;
           display: flex !important;
@@ -276,7 +276,7 @@
           p {
             // width: 80%;
             font-family: $texto;
-            font-size: 0.8rem;
+            font-size: 1rem;
             font-weight: 400;
             color: white;
             text-align: center;
