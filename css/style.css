@@ -105,6 +105,7 @@
   display: flex;
   justify-content: center;
   column-gap: 5%;
+  list-style: none;
 }
 
 .navbar .nav-item {
@@ -128,6 +129,31 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: white;
   border: none;
+}
+
+.navbar .nav-item .nav__link {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+}
+
+.navbar .nav-item .nav__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #007462;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+.navbar .nav-item .nav__link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -183,7 +209,14 @@
     width: 100% !important;
   }
   .navbar-collapse ul {
+    justify-content: center !important;
+    padding-right: 2%;
+    width: 95% !important;
+    height: 90vh;
     margin: 0% !important;
+  }
+  .navbar-collapse ul li {
+    text-align: end;
   }
   .logoNavbar {
     width: 50px !important;
@@ -723,7 +756,7 @@
   overflow: hidden;
   display: grid;
   grid-template-columns: 45% 55%;
-  grid-template-rows: 0.5fr 10% 40% 15%;
+  grid-template-rows: 0.5fr 10% 60% 15%;
   grid-template-areas: "titulo imagen" "subtitulo imagen" "texto imagen" "certificado imagen";
   justify-content: center;
   align-items: center;
@@ -751,12 +784,24 @@
   font-size: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin: 20px 0px;
+  gap: 10px;
+  margin: 10px 0px 20px 0px;
+}
+
+.mision .contenedorMision .contenedorTextos h6 {
+  margin-bottom: 0px;
+  margin-left: 20px;
+  font-family: "poppins-regular";
+  font-weight: bold;
 }
 
 .mision .contenedorMision .contenedorTextos p {
   margin-left: 20px;
+}
+
+.mision .contenedorMision .contenedorTextos p .negrita {
+  font-weight: bold;
+  color: #007462;
 }
 
 .mision .contenedorMision .certificado {
@@ -783,7 +828,7 @@
     overflow: hidden;
     display: grid;
     grid-template-columns: 45% 55%;
-    grid-template-rows: 0.5fr 10% 40% 15%;
+    grid-template-rows: 0.5fr 10% 50% 15%;
     grid-template-areas: "titulo imagen" "subtitulo imagen" "texto imagen" "certificado imagen";
     justify-content: center;
     align-items: center;
@@ -808,8 +853,13 @@
     font-size: 0.8rem;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     margin: 10px 0px;
+  }
+  .mision .contenedorMision .contenedorTextos h6 {
+    margin-left: 20px;
+    font-family: "poppins-regular";
+    font-weight: bold;
   }
   .mision .contenedorMision .contenedorTextos p {
     margin-left: 20px;
@@ -866,6 +916,11 @@
     flex-direction: column;
     gap: 5px;
     margin: 20px 0px;
+  }
+  .mision .contenedorMision .contenedorTextos h6 {
+    margin-left: 0px;
+    font-family: "poppins-regular";
+    font-weight: bold;
   }
   .mision .contenedorMision .contenedorTextos p {
     margin-left: 0px;
@@ -1095,7 +1150,7 @@
 
 .resultados .contenedorCards .card {
   width: 25%;
-  height: 53vh;
+  height: 50vh;
   border: 3px solid white;
   background-color: transparent;
   display: flex;
@@ -2108,14 +2163,16 @@
     margin: 10% 4% 10% 4%;
   }
   .sucursales .contenedorSucursales .cardSucursales {
+    overflow: hidden !important;
     display: flex;
     flex-direction: row;
     column-gap: 5%;
     justify-content: center;
     align-items: center;
-    margin: 15% 0;
+    margin: 25% 0;
   }
   .sucursales .contenedorSucursales .cardSucursales img {
+    overflow: hidden !important;
     width: 80vw;
     height: auto;
     object-fit: cover;
@@ -2125,6 +2182,7 @@
     max-width: 300px;
   }
   .sucursales .contenedorSucursales .cardSucursales .infoSucursales {
+    overflow: hidden !important;
     background: rgba(255, 255, 255, 0.7);
     width: auto;
     height: 100%;

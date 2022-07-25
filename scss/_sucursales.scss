@@ -357,14 +357,16 @@
       margin: 10% 4% 10% 4%;
       // padding-bottom: 5%;
       .cardSucursales {
+        overflow: hidden !important;
         display: flex;
         flex-direction: row;
         column-gap: 5%;
         justify-content: center;
         align-items: center;
-        margin: 15% 0;
+        margin: 25% 0;
 
         img {
+          overflow: hidden !important;
           width: 80vw;
           height: auto;
           object-fit: cover;
@@ -374,6 +376,7 @@
           max-width: 300px;
         }
         .infoSucursales {
+          overflow: hidden !important;
           background: rgba(255, 255, 255, 0.7);
           width: auto;
           height: 100%;

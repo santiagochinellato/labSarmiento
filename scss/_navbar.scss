@@ -21,6 +21,7 @@
     display: flex;
     justify-content: center;
     column-gap: 5%;
+    list-style: none;
   }
   .nav-item {
     display: flex !important;
@@ -42,6 +43,28 @@
         color: white;
         border: none;
       }
+    }
+    .nav__link {
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      position: relative;
+    }
+    .nav__link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $colorPrimary;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.5s;
+    }
+    .nav__link:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
     }
   }
 }
@@ -103,8 +126,17 @@
   }
   .navbar-collapse {
     width: 100% !important;
+
     ul {
+      justify-content: center !important;
+      padding-right: 2%;
+      width: 95% !important;
+      height: 90vh;
       margin: 0% !important;
+
+      li {
+        text-align: end;
+      }
     }
   }
   .logoNavbar {

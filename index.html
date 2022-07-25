@@ -14,6 +14,8 @@
   <script src="https://kit.fontawesome.com/434b1238ad.js" crossorigin="anonymous"></script>
   <!-- slick carousel -->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- AOS  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <title>Document</title>
 </head>
@@ -35,16 +37,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">INICIO</a>
+              <a class="nav-link nav__link" href="#">INICIO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">SOBRE NOSOTROS</a>
+              <a class="nav-link nav__link" href="#">SOBRE NOSOTROS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link ">SUCURSALES</a>
+              <a class="nav-link  nav__link" href="#">SUCURSALES</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">CONTACTO</a>
+              <a class="nav-link nav__link" aria-current="page" href="#">CONTACTO</a>
             </li>
             <li class="nav-item">
               <a class="nav-link "><button class="botonResultados">RESULTADOS</button></a>
@@ -54,7 +56,7 @@
       </div>
     </nav>
     <!-- CAROUSEL HEADER -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
           aria-current="true" aria-label="Slide 1"></button>
@@ -122,12 +124,24 @@
         <h2 class="tituloMision">lorem ipsum Dolor</h2>
         <h6 class="subtituloMision">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nulla libero.</h6>
         <div class="contenedorTextos">
-          <p class="textoUno">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eveniet earum quis, odit
-            deserunt sit! Quia iusto ipsa omnis, dolore quas laudantium voluptatibus reprehenderit earum culpa qui
-            consectetur, exercitationem at!</p>
-          <p class="textoDos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quia nulla est in voluptas?
-            Temporibus nobis, molestiae placeat laborum atque dolores architecto! Tempore officiis quaerat quos
-            consequuntur? Ratione, maiores ut.</p>
+          <h6>Misión</h6>
+          <p class="textoUno">Somos un laboratorio que brinda servicios de salud a la comunidad, dando resultados
+            analíticos con calidad asegurada, colaborando con el asesoramiento, diagnostico y seguimiento de las
+            patologías en el área de análisis clínicos.</p>
+          <h6>Visión</h6>
+          <p class="textoDos">Queremos ser un <span class="negrita">laboratorio líder </span>en la resolución de
+            estudios de alta complejidad en la
+            provincia, reconocidos por su colaboración en la docencia y asesoramiento a profesionales bioquímicos y
+            médicos.
+            Logrando la satisfacción de nuestros clientes y de nuestro personal en pertenecer a una organización
+            innovadora y de prestigio.
+          </p>
+          <p class="textoDos">En <span class="negrita">Laboratorio Sarmiento</span> buscamos obtener la satisfacción de
+            nuestros clientes y la excelencia de los servicios que brindamos a través de la implementación de un sistema
+            de <span class="negrita">Gestion de Calidad </span>que permita la mejora continua.
+            Contamos con las siguientes certificaciones.
+
+          </p>
         </div>
         <img class="certificado" src="./images/certificado.png" alt="">
         <img class="imagenMision" src="./images/Misión.png" alt="">
@@ -218,26 +232,28 @@
       <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</h6>
       <div class="contenedorSucursales">
         <div class="cardSucursales ">
-          <img src="./images/sucursal-1.png" alt="">
-          <div class="infoSucursales">
-            <h4>Lorem ipsum dolor sit.</h4>
+          <img src="./images/sucursal-1.png" alt="" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+            data-aos-delay="300" data-aos-offset="0">
+          <div class="infoSucursales" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="400"
+            data-aos-offset="0">
+            <h4>Sucursal Barrio Norte</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, aspernatur voluptatum! Assumenda, facilis.
               Molestias impedit, officia repellat est fugiat numquam?</p>
             <div class="contenedorInformacion">
-              <div>
+              <!-- <div>
                 <a href="">
                   <div>
                     <i class="bi bi-envelope"></i>
                   </div>
                   <p>Lorem ipsum dolor sit amet.</p>
                 </a>
-              </div>
+              </div> -->
               <div>
                 <a href="">
                   <div>
-                    <i class="bi bi-phone"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
                   </div>
-                  <p>Lorem ipsum dolor sit amet.</p>
+                  <p>+54 9 3816812186</p>
                 </a>
               </div>
               <div>
@@ -245,33 +261,35 @@
                   <div>
                     <i class="bi bi-geo-alt-fill"></i>
                   </div>
-                  <p>Lorem ipsum dolor sit amet.</p>
+                  <p>Av. Sarmiento 784</p>
                 </a>
               </div>
             </div>
           </div>
         </div>
         <div class="cardSucursalesDos ">
-          <img src="./images/sucursal-1.png" alt="">
-          <div class="infoSucursales">
-            <h4>Lorem ipsum dolor sit.</h4>
+          <img src="./images/sucursal-1.png" alt="" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+            data-aos-delay="300" data-aos-offset="0">
+          <div class="infoSucursales" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="400"
+            data-aos-offset="0">
+            <h4>Sucursal Barrio Sur</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, aspernatur voluptatum! Assumenda, facilis.
               Molestias impedit, officia repellat est fugiat numquam?</p>
             <div class="contenedorInformacion">
               <div>
                 <a href="">
                   <div>
-                    <i class="bi bi-envelope"></i>
+                    <i class="fa-solid fa-phone"></i>
                   </div>
-                  <p>Lorem ipsum dolor sit amet.</p>
+                  <p>381 4203561</p>
                 </a>
               </div>
               <div>
                 <a href="">
                   <div>
-                    <i class="bi bi-phone"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
                   </div>
-                  <p>Lorem ipsum dolor sit amet.</p>
+                  <p>+54 9 3813543557</p>
                 </a>
               </div>
               <div>
@@ -279,33 +297,35 @@
                   <div>
                     <i class="bi bi-geo-alt-fill"></i>
                   </div>
-                  <p>Lorem ipsum dolor sit amet.</p>
+                  <p>Lavalle 868</p>
                 </a>
               </div>
             </div>
           </div>
         </div>
         <div class="cardSucursales ">
-          <img src="./images/sucursal-1.png" alt="">
-          <div class="infoSucursales">
-            <h4>Lorem ipsum dolor sit.</h4>
+          <img src="./images/sucursal-1.png" alt="" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+            data-aos-delay="300" data-aos-offset="0">
+          <div class="infoSucursales" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="400"
+            data-aos-offset="0">
+            <h4>Sucursal Banda del Río Salí </h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, aspernatur voluptatum! Assumenda, facilis.
               Molestias impedit, officia repellat est fugiat numquam?</p>
             <div class="contenedorInformacion">
-              <div>
+              <!-- <div>
                 <a href="">
                   <div>
                     <i class="bi bi-envelope"></i>
                   </div>
                   <p>Lorem ipsum dolor sit amet.</p>
                 </a>
-              </div>
+              </div> -->
               <div>
                 <a href="">
                   <div>
-                    <i class="bi bi-phone"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
                   </div>
-                  <p>Lorem ipsum dolor sit amet.</p>
+                  <p>+54 9 38154774775</p>
                 </a>
               </div>
               <div>
@@ -320,26 +340,28 @@
           </div>
         </div>
         <div class="cardSucursalesDos ">
-          <img src="./images/sucursal-1.png" alt="">
-          <div class="infoSucursales">
-            <h4>Lorem ipsum dolor sit.</h4>
+          <img src="./images/sucursal-1.png" alt="" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+            data-aos-delay="300" data-aos-offset="0">
+          <div class="infoSucursales" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="400"
+            data-aos-offset="0">
+            <h4>Clínica San pablo</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, aspernatur voluptatum! Assumenda, facilis.
               Molestias impedit, officia repellat est fugiat numquam?</p>
             <div class="contenedorInformacion">
-              <div>
+              <!-- <div>
                 <a href="">
                   <div>
                     <i class="bi bi-envelope"></i>
                   </div>
                   <p>Lorem ipsum dolor sit amet.</p>
                 </a>
-              </div>
+              </div> -->
               <div>
                 <a href="">
                   <div>
-                    <i class="bi bi-phone"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
                   </div>
-                  <p>Lorem ipsum dolor sit amet.</p>
+                  <p>+54 9 3816812186</p>
                 </a>
               </div>
               <div>
@@ -347,7 +369,7 @@
                   <div>
                     <i class="bi bi-geo-alt-fill"></i>
                   </div>
-                  <p>Lorem ipsum dolor sit amet.</p>
+                  <p>Ruta 301 Km 12.2 - San Pablo</p>
                 </a>
               </div>
             </div>
@@ -460,9 +482,8 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-
-
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- bts -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
