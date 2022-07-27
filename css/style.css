@@ -331,8 +331,8 @@
 }
 
 .carousel .carousel-indicators button {
-  width: 1.1em;
-  height: 2em;
+  width: 0.8em;
+  height: 1.5em;
   margin: 0 20px;
   position: relative;
   background-color: white;
@@ -377,7 +377,7 @@
   margin-left: -11%;
   width: 500px;
   height: 60vh;
-  border-left: 3px solid white;
+  border-left: 4px solid white;
   display: flex !important;
   flex-direction: column;
   justify-content: center;
@@ -792,6 +792,7 @@
   margin-bottom: 0px;
   margin-left: 20px;
   font-family: "poppins-regular";
+  color: #007462;
   font-weight: bold;
 }
 
@@ -801,7 +802,7 @@
 
 .mision .contenedorMision .contenedorTextos p .negrita {
   font-weight: bold;
-  color: #007462;
+  color: #1d1d1b;
 }
 
 .mision .contenedorMision .certificado {
@@ -813,7 +814,7 @@
 .mision .contenedorMision .imagenMision {
   grid-area: imagen;
   margin-left: 5%;
-  height: 100%;
+  height: 80%;
   object-fit: contain;
 }
 
@@ -1068,7 +1069,7 @@
 }
 
 .resultados .contenedorAnimacion {
-  padding: 75px 0;
+  padding: 95px 0;
 }
 
 .resultados .contenedorAnimacion .center {
@@ -1150,9 +1151,9 @@
 
 .resultados .contenedorCards .card {
   width: 25%;
-  height: 50vh;
+  height: fit-content;
   border: 3px solid white;
-  background-color: transparent;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1161,35 +1162,37 @@
 .resultados .contenedorCards .card h6 {
   font-family: "poppins-bold";
   font-size: 1.8rem;
-  color: white;
+  color: #007462;
   text-align: center;
-  margin: 10% auto;
+  margin: 10% auto 5% auto;
 }
 
 .resultados .contenedorCards .card p {
   font-family: "poppins-regular";
   font-size: 1rem;
-  color: white;
+  color: #007462;
   text-align: center;
-  margin: 0% auto 10%;
+  margin: 0% auto 8%;
   width: 85%;
 }
 
 .resultados .contenedorCards .card a {
   width: 100%;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 .resultados .contenedorCards .card a button {
   padding: 0 auto;
+  margin-bottom: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
-  width: 100%;
+  width: 80%;
   font-weight: 600;
   height: 40px;
-  border: 3px solid white;
+  border: 3px solid #007462;
   background-color: transparent;
   cursor: pointer;
   color: white;
@@ -1211,7 +1214,6 @@
 .resultados .contenedorCards .card button:hover {
   background-color: white;
   color: #007462;
-  padding-right: 35px;
 }
 
 .resultados .contenedorCards .card button::after {
@@ -1231,6 +1233,14 @@
 .resultados .contenedorCards .card button:hover::after {
   transform: translate(5px, -50%);
   opacity: 1;
+}
+
+.resultados .contenedorCards .card:hover {
+  transition: all 1s ease;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  top: -10px;
+  border: 1px solid #cccccc;
+  background-color: white;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -1331,9 +1341,9 @@
   }
   .resultados .contenedorCards .card {
     width: 25%;
-    height: 45vh;
+    height: fit-content;
     border: 3px solid white;
-    background-color: transparent;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1341,14 +1351,14 @@
   .resultados .contenedorCards .card h6 {
     font-family: "poppins-bold";
     font-size: 1.6rem;
-    color: white;
+    color: #007462;
     text-align: center;
     margin: 10% auto;
   }
   .resultados .contenedorCards .card p {
     font-family: "poppins-regular";
     font-size: 0.8rem;
-    color: white;
+    color: #007462;
     text-align: center;
     margin: 0% auto 5%;
     width: 85%;
@@ -1366,7 +1376,7 @@
     width: 100%;
     font-weight: 600;
     height: 40px;
-    border: 3px solid white;
+    border: 3px solid #007462;
     background-color: transparent;
     cursor: pointer;
     color: white;
@@ -1505,10 +1515,10 @@
     margin: 0 auto;
   }
   .resultados .contenedorCards .card {
-    width: 27%;
-    height: 45vh;
+    width: 30%;
+    height: fit-content;
     border: 3px solid white;
-    background-color: transparent;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1516,14 +1526,14 @@
   .resultados .contenedorCards .card h6 {
     font-family: "poppins-bold";
     font-size: 1.6rem;
-    color: white;
+    color: #007462;
     text-align: center;
     margin: 10% auto;
   }
   .resultados .contenedorCards .card p {
     font-family: "poppins-regular";
     font-size: 0.8rem;
-    color: white;
+    color: #007462;
     text-align: center;
     margin: 0% auto 5%;
     width: 85%;
@@ -1541,7 +1551,7 @@
     width: 100%;
     font-weight: 600;
     height: 40px;
-    border: 3px solid white;
+    border: 3px solid #007462;
     background-color: transparent;
     cursor: pointer;
     color: white;
@@ -1690,9 +1700,9 @@
   }
   .resultados .cardCarousel {
     margin: 0 10px;
-    height: 280px;
+    height: fit-content;
     border: 3px solid white;
-    background-color: transparent;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1700,21 +1710,21 @@
   .resultados .cardCarousel h6 {
     font-family: "poppins-bold";
     font-size: 1.8rem;
-    color: white;
+    color: #007462;
     text-align: center;
-    margin: 10% auto;
+    margin: 5% auto;
   }
   .resultados .cardCarousel p {
     font-family: "poppins-regular";
     font-size: 1rem;
-    color: white;
+    color: #007462;
     text-align: center;
-    margin: 0% auto 10%;
+    margin: 5% auto 5%;
     width: 85%;
   }
   .resultados .cardCarousel a {
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 5%;
   }
   .resultados .cardCarousel a button {
     padding: 0 auto;
@@ -1725,7 +1735,7 @@
     width: 100%;
     font-weight: 600;
     height: 40px;
-    border: 3px solid white;
+    border: 3px solid #007462;
     background-color: transparent;
     cursor: pointer;
     color: white;
@@ -2579,6 +2589,10 @@
   display: block;
 }
 
+.contactoForm .formulario .contenedorInputs .form-control::placeholder {
+  color: white !important;
+}
+
 .contactoForm .formulario .contenedorInputs .form-control:focus,
 .contactoForm .formulario .contenedorInputs .form-control:valid {
   outline: 0;
@@ -2591,28 +2605,6 @@
   top: 14px;
   left: 0;
   pointer-events: none;
-}
-
-.contactoForm .formulario .contenedorInputs label span {
-  display: inline-block;
-  font-family: "poppins-regular";
-  font-size: 14px;
-  color: white;
-  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.contactoForm .formulario .contenedorInputs input:focus + label span,
-.contactoForm .formulario .contenedorInputs input:valid + label span {
-  color: white;
-  font-size: 1rem;
-  transform: translateY(-30px);
-}
-
-.contactoForm .formulario .contenedorInputs textarea:focus + label span,
-.contactoForm .formulario .contenedorInputs textarea:valid + label span {
-  color: white;
-  font-size: 1rem;
-  transform: translateY(-30px);
 }
 
 .contactoForm .formulario .contacto-formulario-boton {
@@ -3332,7 +3324,7 @@ footer .redesFooter .containerRedesFooter .divRedesFooter:after {
   justify-content: center;
   align-items: center;
   align-content: center;
-  filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(1.5px 1.5px 1.5px #222);
 }
 
 .iconosFlotantes .iconoFlotante a .face {

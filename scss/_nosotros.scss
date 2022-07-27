@@ -47,13 +47,14 @@
         margin-bottom: 0px;
         margin-left: 20px;
         font-family: $texto;
+        color: $colorPrimary;
         font-weight: bold;
       }
       p {
         margin-left: 20px;
         .negrita {
           font-weight: bold;
-          color: $colorPrimary;
+          color: $colorTexto;
         }
       }
     }
@@ -66,7 +67,7 @@
       grid-area: imagen;
       margin-left: 5%;
       // width: auto;
-      height: 100%;
+      height: 80%;
       object-fit: contain;
     }
   }

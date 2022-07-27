@@ -63,7 +63,9 @@
         font-size: $textoSize;
         display: block;
       }
-
+      .form-control::placeholder {
+        color: white !important;
+      }
       .form-control:focus,
       .form-control:valid {
         outline: 0;
@@ -82,25 +84,25 @@
       pointer-events: none;
     }
 
-    .contenedorInputs label span {
-      display: inline-block;
-      font-family: $texto;
-      font-size: 14px;
-      color: white;
-      transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    }
-    .contenedorInputs input:focus + label span,
-    .contenedorInputs input:valid + label span {
-      color: white;
-      font-size: $textoSize;
-      transform: translateY(-30px);
-    }
-    .contenedorInputs textarea:focus + label span,
-    .contenedorInputs textarea:valid + label span {
-      color: white;
-      font-size: $textoSize;
-      transform: translateY(-30px);
-    }
+    // .contenedorInputs label span {
+    //   display: inline-block;
+    //   font-family: $texto;
+    //   font-size: 14px;
+    //   color: white;
+    //   transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    // }
+    // .contenedorInputs input:focus + label span,
+    // .contenedorInputs input:valid + label span {
+    //   color: white;
+    //   font-size: $textoSize;
+    //   transform: translateY(-30px);
+    // }
+    // .contenedorInputs textarea:focus + label span,
+    // .contenedorInputs textarea:valid + label span {
+    //   color: white;
+    //   font-size: $textoSize;
+    //   transform: translateY(-30px);
+    // }
     .contacto-formulario-boton {
       margin: 0% auto;
       display: flex;
