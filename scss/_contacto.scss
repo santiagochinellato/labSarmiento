@@ -267,7 +267,7 @@
 
     .formulario {
       width: 90%;
-      height: 70%;
+      height: 80%;
       background: linear-gradient(89.43deg, #007462 0.54%, #1d71b8 155.21%);
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
       display: flex;
@@ -275,13 +275,13 @@
       justify-content: center;
       align-items: center;
       align-content: center;
-      margin-bottom: 10%;
+      margin-bottom: 15%;
 
       form {
-        height: 100%;
+        height: auto;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         align-content: center;
         // align-items: center;
 
@@ -289,7 +289,7 @@
           font-family: $titulo;
           font-size: 2.5rem;
           color: $colorTexto;
-          margin: 3% 0 10px 0;
+          margin: 0% 0 30px 0;
           text-align: center;
           color: white;
         }
@@ -297,7 +297,7 @@
           font-family: $subtitulo;
           width: 90%;
           text-align: center;
-          margin: 0% auto 3% auto;
+          margin: 0% auto 30px auto;
           color: white;
           font-size: 0.9rem;
         }
@@ -358,7 +358,7 @@
         transform: translateY(-30px);
       }
       .contacto-formulario-boton {
-        margin: 0% auto;
+        margin: 5% auto;
         display: flex;
         justify-content: center;
         align-items: center;

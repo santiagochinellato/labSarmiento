@@ -185,13 +185,13 @@
         opacity: 1;
       }
     }
-    .card:hover {
-      transition: all 1s ease;
-      box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
-      top: -10px;
-      border: 1px solid #cccccc;
-      background-color: white;
-    }
+    // .card:hover {
+    //   transition: all 0.5s ease;
+    //   box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    //   top: -10px;
+    //   border: 1px solid #cccccc;
+    //   background-color: white;
+    // }
   }
 }
 

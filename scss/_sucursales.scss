@@ -60,7 +60,7 @@
           width: 70%;
           display: flex;
           flex-direction: column;
-          gap: 15px;
+          gap: 5px;
           margin-left: 5%;
           div a {
             text-decoration: none;
@@ -73,12 +73,16 @@
           div a div {
             width: 24px;
             height: 24px;
-            border: 1px solid #007462;
+            // border: 1px solid #007462;
             display: flex;
             justify-content: center;
             align-items: center;
-            border-radius: 50%;
+            // border-radius: 50%;
             color: $colorPrimary;
+
+            i {
+              font-size: 1.3rem;
+            }
           }
           div a p {
             padding-left: 20px;
@@ -131,7 +135,7 @@
           width: 70%;
           display: flex;
           flex-direction: column;
-          gap: 15px;
+          gap: 5px;
           margin-left: 10%;
           margin-right: 5%;
           div a {
@@ -143,17 +147,21 @@
             align-items: center;
           }
           div a div {
-            width: 24px;
-            height: 24px;
-            border: 1px solid #007462;
+            width: 40px;
+            height: 40px;
+            // border: 1px solid #007462;
             display: flex;
             justify-content: center;
             align-items: center;
-            border-radius: 50%;
+            // border-radius: 50%;
             color: $colorPrimary;
+
+            i {
+              font-size: 1.3rem;
+            }
           }
           div a p {
-            padding-left: 20px;
+            padding-left: 5px;
             margin: 0;
             color: black;
             font-family: $texto;
@@ -226,7 +234,7 @@
             width: 70%;
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 5px;
             margin-left: 5%;
             div a {
               text-decoration: none;
@@ -239,15 +247,18 @@
             div a div {
               width: 24px;
               height: 24px;
-              border: 1px solid #007462;
+              // border: 1px solid #007462;
               display: flex;
               justify-content: center;
               align-items: center;
-              border-radius: 50%;
+              // border-radius: 50%;
               color: $colorPrimary;
+              i {
+                font-size: 1.1rem;
+              }
             }
             div a p {
-              padding-left: 20px;
+              padding-left: 5px;
               margin: 0;
               color: black;
               font-family: $texto;
@@ -294,9 +305,8 @@
             width: 70%;
             display: flex;
             flex-direction: column;
-            gap: 15px;
-            margin-left: 10%;
-            margin-right: 5%;
+            gap: 5px;
+            margin-left: 5%;
             div a {
               text-decoration: none;
 
@@ -308,15 +318,18 @@
             div a div {
               width: 24px;
               height: 24px;
-              border: 1px solid #007462;
+              // border: 1px solid #007462;
               display: flex;
               justify-content: center;
               align-items: center;
-              border-radius: 50%;
+              // border-radius: 50%;
               color: $colorPrimary;
+              i {
+                font-size: 1.1rem;
+              }
             }
             div a p {
-              padding-left: 20px;
+              padding-left: 5px;
               margin: 0;
               color: black;
               font-family: $texto;
@@ -404,7 +417,7 @@
             width: 100%;
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 5px;
             margin-left: 3%;
             div a {
               text-decoration: none;
@@ -417,15 +430,18 @@
             div a div {
               width: 24px;
               height: 24px;
-              border: 1px solid #007462;
+              // border: 1px solid #007462;
               display: flex;
               justify-content: center;
               align-items: center;
-              border-radius: 50%;
+              // border-radius: 50%;
               color: $colorPrimary;
+              i {
+                font-size: 1.1rem;
+              }
             }
             div a p {
-              padding-left: 20px;
+              padding-left: 5px;
               margin: 0;
               color: black;
               font-family: $texto;
@@ -478,12 +494,11 @@
             width: 90%;
           }
           .contenedorInformacion {
-            width: 90%;
+            width: 100%;
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 5px;
             margin-left: 3%;
-            margin-right: 3%;
             div a {
               text-decoration: none;
 
@@ -495,15 +510,18 @@
             div a div {
               width: 24px;
               height: 24px;
-              border: 1px solid #007462;
+              // border: 1px solid #007462;
               display: flex;
               justify-content: center;
               align-items: center;
-              border-radius: 50%;
+              // border-radius: 50%;
               color: $colorPrimary;
+              i {
+                font-size: 1.1rem;
+              }
             }
             div a p {
-              padding-left: 20px;
+              padding-left: 5px;
               margin: 0;
               color: black;
               font-family: $texto;
@@ -591,15 +609,15 @@
             div a div {
               width: 24px;
               height: 24px;
-              border: 1px solid #007462;
+              // border: 1px solid #007462;
               display: flex;
               justify-content: center;
               align-items: center;
-              border-radius: 50%;
+              // border-radius: 50%;
               color: $colorPrimary;
             }
             div a p {
-              padding-left: 10px;
+              padding-left: 5px;
               margin: 0;
               color: black;
               font-family: $texto;
@@ -663,15 +681,18 @@
             div a div {
               width: 24px;
               height: 24px;
-              border: 1px solid #007462;
+              // border: 1px solid #007462;
               display: flex;
               justify-content: center;
               align-items: center;
-              border-radius: 50%;
+              // border-radius: 50%;
               color: $colorPrimary;
+              i {
+                font-size: 1.1rem;
+              }
             }
             div a p {
-              padding-left: 20px;
+              padding-left: 5px;
               margin: 0;
               color: black;
               font-family: $texto;

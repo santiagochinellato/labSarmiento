@@ -79,6 +79,9 @@
           margin-left: 20px;
         }
       }
+      .fotoMobile {
+        display: none !important;
+      }
     }
   }
 
@@ -179,6 +182,9 @@
             text-align: start;
             margin-left: 20px;
           }
+        }
+        .fotoMobile {
+          display: none;
         }
       }
     }
@@ -283,6 +289,12 @@
             margin-left: 0px;
           }
         }
+        .fotoMobile {
+          display: block !important;
+        }
+        .fotoDesk {
+          display: none !important;
+        }
       }
     }
 
@@ -307,7 +319,7 @@
   }
 }
 
-@media only screen and (min-width: 577px) and (max-width: $desktopSmall) {
+@media only screen and (min-width: 577px) and (max-width: 768px) {
   .carousel {
     height: 100% !important;
     margin-top: 2.4%;
@@ -352,7 +364,117 @@
       .carousel-item {
         img {
           width: 100vw !important;
-          height: 95vh !important;
+          height: 90vh !important;
+          display: none;
+        }
+        .carousel-caption {
+          margin-bottom: 170px;
+          margin-left: -5%;
+          width: 80%;
+          height: 300px;
+          border-left: none;
+          border-bottom: 3px solid white;
+          display: flex !important;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+
+          h5 {
+            // width: 70%;
+            font-family: $titulo;
+            font-size: $tituloSizeMobile;
+            font-weight: 700;
+            color: white;
+            text-align: center !important;
+            margin-bottom: 30px;
+            margin-left: 0px;
+          }
+          p {
+            // width: 80%;
+            font-family: $texto;
+            font-size: 1rem;
+            font-weight: 400;
+            color: white;
+            text-align: center;
+            margin-left: 0px;
+          }
+        }
+        .fotoMobile {
+          display: block !important;
+        }
+        .fotoDesk {
+          display: none !important;
+        }
+      }
+    }
+
+    .carousel-control-prev {
+      top: 88%;
+      left: 25%;
+      z-index: 10000;
+      display: none;
+      .carousel-control-prev-icon {
+        background-image: url("../images/left-arrow.png");
+      }
+    }
+    .carousel-control-next {
+      top: 88%;
+      right: 25%;
+      z-index: 10000;
+      display: none;
+    }
+    .carousel-control-next-icon {
+      background-image: url("../images/right-arrow.png");
+    }
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: $desktopSmall) {
+  .carousel {
+    height: 100% !important;
+    margin-top: 2.4%;
+
+    .carousel-indicators {
+      button {
+        width: 0.7em;
+        height: 1.3em;
+        margin: 0 20px;
+        position: relative;
+        background-color: white;
+      }
+      button:before {
+        background: inherit;
+        content: "";
+        height: 100%;
+        position: absolute;
+        transform: rotate(-60deg);
+        transform-origin: 50% 50%;
+        width: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+      button:after {
+        background: inherit;
+        content: "";
+        height: 100%;
+        position: absolute;
+        transform: rotate(60deg);
+        transform-origin: 50% 50%;
+        width: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+    }
+
+    .carousel-inner {
+      .carousel-item {
+        img {
+          width: 100vw !important;
+          height: 100vh !important;
           display: none;
         }
         .carousel-caption {
@@ -386,6 +508,9 @@
             text-align: start;
             margin-left: 20px;
           }
+        }
+        .fotoMobile {
+          display: none;
         }
       }
     }

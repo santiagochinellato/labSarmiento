@@ -21,7 +21,7 @@
 </head>
 
 <body>
-  <header>
+  <header id="inicio">
     <nav class="navbar navbar-expand-lg navbar-light ">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -37,19 +37,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link nav__link" href="#">INICIO</a>
+              <a class="nav-link nav__link" href="#inicio">INICIO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav__link" href="#">SOBRE NOSOTROS</a>
+              <a class="nav-link nav__link" href="#nosotros">SOBRE NOSOTROS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link  nav__link" href="#">SUCURSALES</a>
+              <a class="nav-link  nav__link" href="#sucursales">SUCURSALES</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav__link" aria-current="page" href="#">CONTACTO</a>
+              <a class="nav-link nav__link" aria-current="page" href="#contacto">CONTACTO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link "><button class="botonResultados">RESULTADOS</button></a>
+              <a class="nav-link " href="#resultados"><button class="botonResultados">RESULTADOS</button></a>
             </li>
           </ul>
         </div>
@@ -67,7 +67,8 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="./images/Foto1Degrade.jpg" class="d-block " alt="...">
+          <img src="./images/Slide1.jpg" class="d-block fotoDesk " alt="...">
+          <img src="./images/SlideMobile1.jpg" class="d-block fotoMobile " alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>First slide label</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor id tincidunt cras odio tellus quam augue
@@ -76,7 +77,8 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img src="./images/Foto1Degrade.jpg" class="d-block " alt="...">
+          <img src="./images/Slide2.jpg" class="d-block fotoDesk " alt="...">
+          <img src="./images/SlideMobile2.jpg" class="d-block fotoMobile " alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>Second slide label</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor id tincidunt cras odio tellus quam augue
@@ -85,7 +87,8 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img src="./images/Foto1Degrade.jpg" class="d-block " alt="...">
+          <img src="./images/Slide3.jpg" class="d-block fotoDesk " alt="...">
+          <img src="./images/SlideMobile3.jpg" class="d-block fotoMobile " alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>Third slide label</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor id tincidunt cras odio tellus quam augue
@@ -119,7 +122,7 @@
   </header>
   <main>
     <!-- mision -->
-    <section id="mision" class="mision">
+    <section id="nosotros" class="mision">
       <div class="contenedorMision">
         <h2 class="tituloMision">lorem ipsum Dolor</h2>
         <h6 class="subtituloMision">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nulla libero.</h6>
@@ -344,7 +347,7 @@
             data-aos-delay="300" data-aos-offset="0">
           <div class="infoSucursales" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="400"
             data-aos-offset="0">
-            <h4>Clínica San pablo</h4>
+            <h4>Clínica San Pablo</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, aspernatur voluptatum! Assumenda, facilis.
               Molestias impedit, officia repellat est fugiat numquam?</p>
             <div class="contenedorInformacion">
@@ -442,13 +445,11 @@
     </div>
   </footer>
   <section class="bottomBar">
-    <div>
-      <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-      <a href=""><i class="fa-brands fa-instagram"></i></a>
-      <a><button class="botonresultadosMobile">RESULTADOS</button></a>
-      <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-      <a href=""><i class="fa-solid fa-phone"></i></a>
-    </div>
+    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+    <a href=""><i class="fa-brands fa-instagram"></i></a>
+    <a><button class="botonresultadosMobile">RESULTADOS</button></a>
+    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+    <a href=""><i class="fa-solid fa-phone"></i></a>
   </section>
   <!-- slick carousel -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
