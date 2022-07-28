@@ -44,7 +44,7 @@
     .carousel-item {
       img {
         width: 100vw !important;
-        height: 95vh !important;
+        height: auto !important;
         display: none;
       }
       .carousel-caption {
@@ -217,7 +217,7 @@
       button {
         width: 0.5em;
         height: 1em;
-        margin: 0 20px 15% 20px;
+        margin: 0 20px 30% 20px;
         position: relative;
         background-color: white;
       }
@@ -252,12 +252,13 @@
     .carousel-inner {
       .carousel-item {
         img {
-          width: 100vw !important;
-          height: 90vh !important;
+          object-fit: cover;
+          width: 100% !important;
+          height: 100vh !important;
           display: none;
         }
         .carousel-caption {
-          margin-bottom: 170px;
+          margin-bottom: 250px;
           margin-left: -5%;
           width: 80%;
           height: 300px;
@@ -363,8 +364,9 @@
     .carousel-inner {
       .carousel-item {
         img {
+          object-fit: cover;
           width: 100vw !important;
-          height: 90vh !important;
+          height: 100vh !important;
           display: none;
         }
         .carousel-caption {
@@ -432,7 +434,7 @@
 @media only screen and (min-width: 769px) and (max-width: $desktopSmall) {
   .carousel {
     height: 100% !important;
-    margin-top: 2.4%;
+    margin-top: 8%;
 
     .carousel-indicators {
       button {
@@ -473,8 +475,9 @@
     .carousel-inner {
       .carousel-item {
         img {
+          // object-fit: contain;
           width: 100vw !important;
-          height: 100vh !important;
+          height: auto !important;
           display: none;
         }
         .carousel-caption {
