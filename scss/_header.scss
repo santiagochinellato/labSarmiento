@@ -2,7 +2,7 @@
 
 .carousel {
   height: 100% !important;
-  margin-top: 2.4%;
+  // margin-top: 2.4%;
 
   .carousel-indicators {
     button {
@@ -44,8 +44,9 @@
     .carousel-item {
       img {
         width: 100vw !important;
-        height: auto !important;
+        height: 100vh !important;
         display: none;
+        object-fit: cover;
       }
       .carousel-caption {
         margin-bottom: 5%;

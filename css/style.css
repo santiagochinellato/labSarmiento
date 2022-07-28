@@ -326,7 +326,6 @@
 
 .carousel {
   height: 100% !important;
-  margin-top: 2.4%;
 }
 
 .carousel .carousel-indicators button {
@@ -367,8 +366,9 @@
 
 .carousel .carousel-inner .carousel-item img {
   width: 100vw !important;
-  height: auto !important;
+  height: 100vh !important;
   display: none;
+  object-fit: cover;
 }
 
 .carousel .carousel-inner .carousel-item .carousel-caption {
