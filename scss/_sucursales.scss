@@ -18,6 +18,7 @@
     font-size: $subtituloSize;
     color: $colorTexto;
   }
+
   .contenedorSucursales {
     margin: 5% 4% 10% 4%;
     // padding-bottom: 5%;
@@ -34,20 +35,32 @@
         height: auto;
         object-fit: cover;
       }
+      .contenedorHorarios {
+        width: 100%;
+        h5 {
+          margin-left: 5%;
+          font-family: $subtitulo;
+          font-size: 1.3rem;
+        }
+        p {
+          margin: 3px 0px 0px 5% !important;
+        }
+      }
       .infoSucursales {
         width: 60%;
         height: 100%;
-        border-left: 3px solid $colorTexto;
+        border-left: 3px solid $colorPrimary;
         display: flex;
         flex-direction: column;
 
         align-items: flex-start;
 
         h4 {
-          margin-left: 5%;
+          margin-left: 4%;
           margin-bottom: 3%;
           font-family: $subtitulo;
           font-size: 2rem;
+          color: $colorPrimary;
         }
         p {
           margin-left: 5%;
@@ -62,6 +75,11 @@
           flex-direction: column;
           gap: 5px;
           margin-left: 5%;
+          h5 {
+            font-family: $subtitulo;
+            font-size: 1.3rem;
+            margin-top: 10px;
+          }
           div a {
             text-decoration: none;
 
@@ -84,8 +102,22 @@
               font-size: 1.3rem;
             }
           }
+          div a div {
+            width: 24px;
+            height: 24px;
+            // border: 1px solid #007462;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // border-radius: 50%;
+            color: $colorPrimary;
+
+            img {
+              width: 1.4rem;
+            }
+          }
           div a p {
-            padding-left: 20px;
+            padding-left: 10px;
             margin: 0;
             color: black;
             font-family: $texto;
@@ -107,24 +139,36 @@
         height: 100%;
         object-fit: cover;
       }
+      .contenedorHorarios {
+        width: 100%;
+        h5 {
+          margin-left: 11%;
+          font-family: $subtitulo;
+          font-size: 1.3rem;
+        }
+        p {
+          margin: 3px 0px 0px 11% !important;
+        }
+      }
       .infoSucursales {
         width: 60%;
         height: 100%;
-        border-right: 3px solid $colorTexto;
+        border-right: 3px solid $colorPrimary;
         display: flex;
         flex-direction: column;
 
         align-items: flex-start;
 
         h4 {
-          margin-left: 10%;
+          margin-left: 10.5%;
           margin-right: 5%;
           margin-bottom: 3%;
           font-family: $subtitulo;
           font-size: 2rem;
+          color: $colorPrimary;
         }
         p {
-          margin-left: 10%;
+          margin-left: 11.5%;
           margin-right: 5%;
           margin-bottom: 3%;
           font-family: $texto;
@@ -136,8 +180,13 @@
           display: flex;
           flex-direction: column;
           gap: 5px;
-          margin-left: 10%;
+          margin-left: 11%;
           margin-right: 5%;
+          h5 {
+            font-family: $subtitulo;
+            font-size: 1.3rem;
+            margin-top: 10px;
+          }
           div a {
             text-decoration: none;
 
@@ -160,8 +209,22 @@
               font-size: 1.3rem;
             }
           }
+          div a div {
+            width: 24px;
+            height: 24px;
+            // border: 1px solid #007462;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // border-radius: 50%;
+            color: $colorPrimary;
+
+            img {
+              width: 1.4rem;
+            }
+          }
           div a p {
-            padding-left: 5px;
+            padding-left: 10px;
             margin: 0;
             color: black;
             font-family: $texto;
@@ -180,7 +243,7 @@
 
     h2 {
       margin: 5% auto 15px auto;
-      font-family: 3.5rem;
+      font-family: $titulo;
       text-align: center;
       font-size: $tituloSize;
       color: $colorTexto;
@@ -189,9 +252,10 @@
       margin: 0% auto 5% auto;
       font-family: $subtitulo;
       text-align: center;
-      font-size: 1.1rem;
+      font-size: $subtituloSize;
       color: $colorTexto;
     }
+
     .contenedorSucursales {
       margin: 5% 4% 10% 4%;
       // padding-bottom: 5%;
@@ -208,26 +272,38 @@
           height: auto;
           object-fit: cover;
         }
+        .contenedorHorarios {
+          width: 100%;
+          h5 {
+            margin-left: 5%;
+            font-family: $subtitulo;
+            font-size: 1.3rem;
+          }
+          p {
+            margin: 3px 0px 0px 5% !important;
+          }
+        }
         .infoSucursales {
           width: 60%;
           height: 100%;
-          border-left: 3px solid $colorTexto;
+          border-left: 3px solid $colorPrimary;
           display: flex;
           flex-direction: column;
 
           align-items: flex-start;
 
           h4 {
-            margin-left: 5%;
+            margin-left: 4%;
             margin-bottom: 3%;
             font-family: $subtitulo;
-            font-size: 1.7rem;
+            font-size: 2rem;
+            color: $colorPrimary;
           }
           p {
             margin-left: 5%;
             margin-bottom: 3%;
             font-family: $texto;
-            font-size: 0.8rem;
+            font-size: $textoSize;
             width: 80%;
           }
           .contenedorInformacion {
@@ -236,6 +312,11 @@
             flex-direction: column;
             gap: 5px;
             margin-left: 5%;
+            h5 {
+              font-family: $subtitulo;
+              font-size: 1.3rem;
+              margin-top: 10px;
+            }
             div a {
               text-decoration: none;
 
@@ -253,16 +334,31 @@
               align-items: center;
               // border-radius: 50%;
               color: $colorPrimary;
+
               i {
-                font-size: 1.1rem;
+                font-size: 1.3rem;
+              }
+            }
+            div a div {
+              width: 24px;
+              height: 24px;
+              // border: 1px solid #007462;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              // border-radius: 50%;
+              color: $colorPrimary;
+
+              img {
+                width: 1.4rem;
               }
             }
             div a p {
-              padding-left: 5px;
+              padding-left: 10px;
               margin: 0;
               color: black;
               font-family: $texto;
-              font-size: 0.8rem;
+              font-size: $textoSize;
             }
           }
         }
@@ -280,25 +376,40 @@
           height: 100%;
           object-fit: cover;
         }
+        .contenedorHorarios {
+          width: 100%;
+          h5 {
+            margin-left: 11%;
+            font-family: $subtitulo;
+            font-size: 1.3rem;
+          }
+          p {
+            margin: 3px 0px 0px 11% !important;
+          }
+        }
         .infoSucursales {
           width: 60%;
           height: 100%;
-          border-right: 3px solid $colorTexto;
+          border-right: 3px solid $colorPrimary;
           display: flex;
           flex-direction: column;
 
           align-items: flex-start;
+
           h4 {
-            margin-left: 5%;
+            margin-left: 10.5%;
+            margin-right: 5%;
             margin-bottom: 3%;
             font-family: $subtitulo;
-            font-size: 1.7rem;
+            font-size: 2rem;
+            color: $colorPrimary;
           }
           p {
-            margin-left: 5%;
+            margin-left: 11.5%;
+            margin-right: 5%;
             margin-bottom: 3%;
             font-family: $texto;
-            font-size: 0.8rem;
+            font-size: $textoSize;
             width: 80%;
           }
           .contenedorInformacion {
@@ -306,7 +417,13 @@
             display: flex;
             flex-direction: column;
             gap: 5px;
-            margin-left: 5%;
+            margin-left: 11%;
+            margin-right: 5%;
+            h5 {
+              font-family: $subtitulo;
+              font-size: 1.3rem;
+              margin-top: 10px;
+            }
             div a {
               text-decoration: none;
 
@@ -314,6 +431,20 @@
               display: flex;
               justify-content: flex-start;
               align-items: center;
+            }
+            div a div {
+              width: 40px;
+              height: 40px;
+              // border: 1px solid #007462;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              // border-radius: 50%;
+              color: $colorPrimary;
+
+              i {
+                font-size: 1.3rem;
+              }
             }
             div a div {
               width: 24px;
@@ -324,16 +455,17 @@
               align-items: center;
               // border-radius: 50%;
               color: $colorPrimary;
-              i {
-                font-size: 1.1rem;
+
+              img {
+                width: 1.4rem;
               }
             }
             div a p {
-              padding-left: 5px;
+              padding-left: 10px;
               margin: 0;
               color: black;
               font-family: $texto;
-              font-size: 0.8rem;
+              font-size: $textoSize;
             }
           }
         }
@@ -367,7 +499,7 @@
     }
     .contenedorSucursales {
       overflow: hidden;
-      margin: 10% 4% 10% 4%;
+      margin: 5% 4% 5% 4%;
       // padding-bottom: 5%;
       .cardSucursales {
         overflow: hidden !important;
@@ -388,6 +520,17 @@
           left: 0%;
           max-width: 300px;
         }
+        .contenedorHorarios {
+          width: 100%;
+          h5 {
+            margin-left: 3%;
+            font-family: $subtitulo;
+            font-size: 1.3rem;
+          }
+          p {
+            margin: 3px 0px 0px 3% !important;
+          }
+        }
         .infoSucursales {
           overflow: hidden !important;
           background: rgba(255, 255, 255, 0.7);
@@ -401,6 +544,7 @@
           align-items: flex-start;
 
           h4 {
+            width: 100%;
             margin-left: 3%;
             margin-bottom: 3%;
             font-family: $subtitulo;
@@ -440,6 +584,22 @@
                 font-size: 1.1rem;
               }
             }
+            div a div {
+              width: 24px;
+              height: 24px;
+              // border: 1px solid #007462;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              // border-radius: 50%;
+              color: $colorPrimary;
+
+              img {
+                width: 1.3rem;
+                margin-left: 3.5%;
+              }
+            }
+
             div a p {
               padding-left: 5px;
               margin: 0;
@@ -466,6 +626,18 @@
           z-index: -1;
           right: 0%;
           max-width: 300px;
+        }
+        .contenedorHorarios {
+          width: 100%;
+
+          h5 {
+            margin-left: 3% !important;
+            font-family: $subtitulo;
+            font-size: 1.3rem;
+          }
+          p {
+            margin: 3px 0px 0px 3% !important;
+          }
         }
         .infoSucursales {
           background: rgba(255, 255, 255, 0.7);
@@ -519,6 +691,28 @@
               i {
                 font-size: 1.1rem;
               }
+            }
+            div a div {
+              width: 24px;
+              height: 24px;
+              // border: 1px solid #007462;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              // border-radius: 50%;
+              color: $colorPrimary;
+
+              img {
+                width: 1.3rem;
+                margin-right: 88%;
+              }
+            }
+            div a p {
+              padding-left: 5px;
+              margin: 0;
+              color: black;
+              font-family: $texto;
+              font-size: 0.8rem;
             }
             div a p {
               padding-left: 5px;
