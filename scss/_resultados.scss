@@ -123,7 +123,7 @@
       p {
         font-family: $texto;
         font-size: $textoSize;
-        color: $colorPrimary;
+        color: $colorTexto;
         text-align: center;
         margin: 0% auto 8%;
         width: 85%;
@@ -155,6 +155,7 @@
             width: 50%;
             margin: 0%;
             margin-left: 20px;
+            color: $colorPrimary;
           }
         }
         button:hover p {

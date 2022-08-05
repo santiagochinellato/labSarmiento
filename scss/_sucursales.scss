@@ -35,6 +35,9 @@
         height: auto;
         object-fit: cover;
       }
+      .imagenSucursal {
+        filter: drop-shadow(3px 1px 2px #000);
+      }
       .contenedorHorarios {
         width: 100%;
         h5 {
@@ -138,6 +141,9 @@
         width: 30%;
         height: 100%;
         object-fit: cover;
+      }
+      .imagenSucursal {
+        filter: drop-shadow(3px 1px 2px #000);
       }
       .contenedorHorarios {
         width: 100%;
@@ -834,7 +840,7 @@
           object-fit: cover;
         }
         .infoSucursales {
-          width: 60%;
+          width: 20%;
           height: 100%;
           border-right: 3px solid $colorTexto;
           display: flex;

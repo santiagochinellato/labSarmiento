@@ -32,7 +32,7 @@
       text-decoration: none;
       color: $colorPrimary !important;
       font-family: $menu !important;
-      font-size: $menuSize !important;
+      font-size: 0.9rem !important;
       .botonResultados {
         width: 150px;
         height: 40px;
@@ -43,7 +43,13 @@
         color: white;
         border: none;
       }
+      .botonResultados:hover {
+        background: white;
+        border: 2px solid $colorPrimary;
+        color: $colorPrimary;
+      }
     }
+
     .nav__link {
       display: inline-block;
       text-decoration: none;
@@ -131,7 +137,7 @@
       justify-content: center !important;
       padding-right: 2%;
       width: 95% !important;
-      height: 90vh;
+      height: 40vh;
       margin: 0% !important;
 
       li {

@@ -9,7 +9,7 @@
     overflow: hidden;
     display: grid;
     grid-template-columns: 45% 55%;
-    grid-template-rows: 0.5fr 10% 60% 15%;
+    grid-template-rows: 0.6fr 10% 60% 15%;
     grid-template-areas:
       "titulo imagen"
       "subtitulo imagen"
@@ -24,7 +24,7 @@
       grid-area: titulo;
       font-family: $titulo;
       font-size: $tituloSize;
-      margin-bottom: 20px;
+      margin-bottom: 0px;
       // width: 80%;
     }
     .subtituloMision {
@@ -61,7 +61,7 @@
     .certificado {
       grid-area: certificado;
       width: 250px;
-      margin: 20px 20px;
+      margin: 10px 20px;
     }
     .imagenMision {
       grid-area: imagen;
