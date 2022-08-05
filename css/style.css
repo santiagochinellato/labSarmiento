@@ -3568,6 +3568,11 @@ footer .linksFooter ul li {
   list-style-type: none;
 }
 
+footer .linksFooter ul li a {
+  color: white;
+  text-decoration: none;
+}
+
 footer .redesFooter {
   display: flex;
   flex-direction: column;
