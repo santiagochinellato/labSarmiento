@@ -126,7 +126,7 @@
   }
 }
 
-@media only screen and (min-width: $celular) and (max-width: $celularSmall) {
+@media only screen and (min-width: $celular) and (max-width: $desktopSmall) {
   .navbar div {
     padding: 0;
   }
@@ -137,7 +137,7 @@
       justify-content: center !important;
       padding-right: 2%;
       width: 95% !important;
-      height: 40vh;
+      height: 50vh;
       margin: 0% !important;
 
       li {

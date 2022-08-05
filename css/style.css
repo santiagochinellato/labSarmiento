@@ -206,7 +206,7 @@
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 576px) {
+@media only screen and (min-width: 320px) and (max-width: 992px) {
   .navbar div {
     padding: 0;
   }
@@ -217,7 +217,7 @@
     justify-content: center !important;
     padding-right: 2%;
     width: 95% !important;
-    height: 40vh;
+    height: 50vh;
     margin: 0% !important;
   }
   .navbar-collapse ul li {
@@ -3546,47 +3546,74 @@
 }
 
 footer {
-  height: 40vh;
   background: linear-gradient(89.43deg, #007462 0.54%, #1d71b8 155.21%);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  padding-bottom: 30px;
+}
+
+footer .credito {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+footer .credito h6 {
+  font-family: "poppins-regular";
+  font-size: 1.2rem;
+}
+
+footer .credito:hover {
+  text-decoration: none;
+  color: white;
+}
+
+footer .footer {
+  height: 40vh;
+  background: linear-gradient(89.43deg, #007462 0.54%, #1d71b8 155.21%);
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-top: 3%;
 }
 
-footer img {
+footer .footer img {
   width: 10%;
   align-self: flex-start;
 }
 
-footer .linksFooter {
+footer .footer .linksFooter {
   font-family: "poppins-regular";
   color: white;
   font-size: 1rem;
   align-self: flex-start;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-footer .linksFooter h6 {
+footer .footer .linksFooter h6 {
   font-size: 1.1rem;
   font-family: "poppins-bold";
 }
 
-footer .linksFooter ul {
+footer .footer .linksFooter ul {
   padding: 0% !important;
 }
 
-footer .linksFooter ul li {
+footer .footer .linksFooter ul li {
   text-decoration: none;
   list-style-type: none;
+  text-align: center;
 }
 
-footer .linksFooter ul li a {
+footer .footer .linksFooter ul li a {
   color: white;
   text-decoration: none;
 }
 
-footer .redesFooter {
+footer .footer .redesFooter {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -3594,18 +3621,18 @@ footer .redesFooter {
   align-self: flex-start;
 }
 
-footer .redesFooter h6 {
+footer .footer .redesFooter h6 {
   font-size: 1.1rem;
   font-family: "poppins-bold";
   color: white;
 }
 
-footer .redesFooter .containerRedesFooter {
+footer .footer .redesFooter .containerRedesFooter {
   margin-top: 10%;
   display: flex;
 }
 
-footer .redesFooter .containerRedesFooter .divRedesFooter {
+footer .footer .redesFooter .containerRedesFooter .divRedesFooter {
   width: 1.1em;
   height: 2em;
   margin: 0 20px;
@@ -3613,7 +3640,7 @@ footer .redesFooter .containerRedesFooter .divRedesFooter {
   background-color: white;
 }
 
-footer .redesFooter .containerRedesFooter .divRedesFooter a i {
+footer .footer .redesFooter .containerRedesFooter .divRedesFooter a i {
   z-index: 200;
   color: #007462;
   position: relative;
@@ -3623,7 +3650,7 @@ footer .redesFooter .containerRedesFooter .divRedesFooter a i {
   right: 12%;
 }
 
-footer .redesFooter .containerRedesFooter .divRedesFooter a .faceFooter {
+footer .footer .redesFooter .containerRedesFooter .divRedesFooter a .faceFooter {
   z-index: 200;
   color: #007462;
   position: relative;
@@ -3633,7 +3660,7 @@ footer .redesFooter .containerRedesFooter .divRedesFooter a .faceFooter {
   right: -5%;
 }
 
-footer .redesFooter .containerRedesFooter .divRedesFooter:before {
+footer .footer .redesFooter .containerRedesFooter .divRedesFooter:before {
   background: inherit;
   content: "";
   height: 100%;
@@ -3647,7 +3674,7 @@ footer .redesFooter .containerRedesFooter .divRedesFooter:before {
   left: 0;
 }
 
-footer .redesFooter .containerRedesFooter .divRedesFooter:after {
+footer .footer .redesFooter .containerRedesFooter .divRedesFooter:after {
   background: inherit;
   content: "";
   height: 100%;
@@ -3663,60 +3690,77 @@ footer .redesFooter .containerRedesFooter .divRedesFooter:after {
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   footer {
-    height: 35vh;
     background: linear-gradient(89.43deg, #007462 0.54%, #1d71b8 155.21%);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    padding-bottom: 10px;
+  }
+  footer .credito {
+    text-align: start;
+    text-decoration: none;
+    color: white;
+  }
+  footer .credito h6 {
+    font-family: "poppins-regular";
+    font-size: 0.8rem;
+  }
+  footer .credito:hover {
+    text-decoration: none;
+    color: white;
+  }
+  footer .footer {
+    height: 35vh;
+    background: linear-gradient(89.43deg, #007462 0.54%, #1d71b8 155.21%);
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-top: 3%;
   }
-  footer img {
+  footer .footer img {
     width: 10%;
     align-self: flex-start;
   }
-  footer .linksFooter {
+  footer .footer .linksFooter {
     font-family: "poppins-regular";
     color: white;
     font-size: 1rem;
     align-self: flex-start;
   }
-  footer .linksFooter h6 {
+  footer .footer .linksFooter h6 {
     font-size: 1rem;
     font-family: "poppins-bold";
   }
-  footer .linksFooter ul {
+  footer .footer .linksFooter ul {
     padding: 0% !important;
   }
-  footer .linksFooter ul li {
+  footer .footer .linksFooter ul li {
     text-decoration: none;
     list-style-type: none;
     font-size: 0.8rem;
   }
-  footer .redesFooter {
+  footer .footer .redesFooter {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-self: flex-start;
   }
-  footer .redesFooter h6 {
+  footer .footer .redesFooter h6 {
     font-size: 1rem;
     font-family: "poppins-bold";
     color: white;
   }
-  footer .redesFooter .containerRedesFooter {
+  footer .footer .redesFooter .containerRedesFooter {
     margin-top: 10%;
     display: flex;
   }
-  footer .redesFooter .containerRedesFooter .divRedesFooter {
+  footer .footer .redesFooter .containerRedesFooter .divRedesFooter {
     width: 1.1em;
     height: 2em;
     margin: 0 20px;
     position: relative;
     background-color: white;
   }
-  footer .redesFooter .containerRedesFooter .divRedesFooter a i {
+  footer .footer .redesFooter .containerRedesFooter .divRedesFooter a i {
     z-index: 200;
     color: #007462;
     position: relative;
@@ -3725,7 +3769,7 @@ footer .redesFooter .containerRedesFooter .divRedesFooter:after {
     bottom: 5%;
     right: 12%;
   }
-  footer .redesFooter .containerRedesFooter .divRedesFooter a .faceFooter {
+  footer .footer .redesFooter .containerRedesFooter .divRedesFooter a .faceFooter {
     z-index: 200;
     color: #007462;
     position: relative;
@@ -3734,7 +3778,7 @@ footer .redesFooter .containerRedesFooter .divRedesFooter:after {
     bottom: -15%;
     right: -5%;
   }
-  footer .redesFooter .containerRedesFooter .divRedesFooter:before {
+  footer .footer .redesFooter .containerRedesFooter .divRedesFooter:before {
     background: inherit;
     content: "";
     height: 100%;
@@ -3747,7 +3791,7 @@ footer .redesFooter .containerRedesFooter .divRedesFooter:after {
     bottom: 0;
     left: 0;
   }
-  footer .redesFooter .containerRedesFooter .divRedesFooter:after {
+  footer .footer .redesFooter .containerRedesFooter .divRedesFooter:after {
     background: inherit;
     content: "";
     height: 100%;
@@ -3764,26 +3808,43 @@ footer .redesFooter .containerRedesFooter .divRedesFooter:after {
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   footer {
-    height: 100%;
     background: linear-gradient(89.43deg, #007462 0.54%, #1d71b8 155.21%);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    padding-bottom: 70px;
+  }
+  footer .credito {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+  }
+  footer .credito h6 {
+    font-family: "poppins-regular";
+    font-size: 1rem;
+  }
+  footer .credito:hover {
+    text-decoration: none;
+    color: white;
+  }
+  footer .footer {
+    height: 100%;
+    background: linear-gradient(89.43deg, #007462 0.54%, #1d71b8 155.21%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
     padding-top: 3%;
-    padding-bottom: 30%;
+    padding-bottom: 10%;
   }
-  footer img {
+  footer .footer img {
     width: 30%;
     align-self: flex-start;
     margin: 0 auto;
   }
-  footer .linksFooter {
+  footer .footer .linksFooter {
     display: none;
   }
-  footer .redesFooter {
+  footer .footer .redesFooter {
     display: none;
   }
 }
