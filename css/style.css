@@ -3692,7 +3692,7 @@ footer .footer .redesFooter .containerRedesFooter .divRedesFooter:after {
   footer {
     background: linear-gradient(89.43deg, #007462 0.54%, #1d71b8 155.21%);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-    padding-bottom: 10px;
+    padding-bottom: 60px;
   }
   footer .credito {
     text-align: start;
@@ -4013,7 +4013,7 @@ footer .footer .redesFooter .containerRedesFooter .divRedesFooter:after {
   display: none;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 576px) {
+@media only screen and (min-width: 320px) and (max-width: 992px) {
   .bottomBar {
     display: inline;
     width: 100%;
@@ -4033,7 +4033,7 @@ footer .footer .redesFooter .containerRedesFooter .divRedesFooter:after {
     font-size: 1.5rem;
   }
   .bottomBar a .botonresultadosMobile {
-    width: 200px;
+    width: 180px;
     height: 40px;
     margin: 0%;
     background: linear-gradient(270.1deg, #007462 19.07%, #1d71b8 185.03%);

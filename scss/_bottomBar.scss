@@ -4,7 +4,7 @@
   display: none;
 }
 
-@media only screen and (min-width: $celular) and (max-width: $celularSmall) {
+@media only screen and (min-width: $celular) and (max-width: $desktopSmall) {
   .bottomBar {
     display: inline;
     width: 100%;
@@ -24,7 +24,7 @@
       font-size: 1.5rem;
     }
     a .botonresultadosMobile {
-      width: 200px;
+      width: 180px;
       height: 40px;
       margin: 0%;
       background: linear-gradient(270.1deg, #007462 19.07%, #1d71b8 185.03%);
