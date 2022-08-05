@@ -106,6 +106,7 @@
 
     .card {
       width: 25%;
+
       height: fit-content;
       border: 3px solid white;
       background-color: white;
@@ -127,6 +128,8 @@
         text-align: center;
         margin: 0% auto 8%;
         width: 85%;
+        height: 100%;
+        min-height: 80px;
       }
 
       a {
@@ -156,6 +159,8 @@
             margin: 0%;
             margin-left: 20px;
             color: $colorPrimary;
+            min-height: 0;
+            margin-top: 10px;
           }
         }
         button:hover p {
@@ -322,6 +327,7 @@
           text-align: center;
           margin: 0% auto 5%;
           width: 85%;
+          min-height: 80px;
         }
 
         a {
@@ -348,6 +354,8 @@
               width: 50%;
               margin: 0%;
               margin-left: 20px;
+              min-height: 0px;
+              margin-top: 15px;
             }
           }
           button:hover p {
@@ -507,6 +515,7 @@
           text-align: center;
           margin: 0% auto 5%;
           width: 85%;
+          min-height: 80px;
         }
 
         a {
@@ -531,8 +540,10 @@
 
             p {
               width: 50%;
-              margin: 0%;
+              // margin: 0%;
               margin-left: 20px;
+              margin-top: 15px;
+              min-height: 0px;
             }
           }
           button:hover p {
@@ -681,6 +692,7 @@
     .cardCarousel {
       margin: 0 10px;
       // width: 25%;
+      min-height: 269px;
       height: fit-content;
       border: 3px solid white;
       background-color: white;
@@ -700,8 +712,9 @@
         font-size: $textoSize;
         color: $colorPrimary;
         text-align: center;
-        margin: 5% auto 5%;
+        margin: 10px auto 10px;
         width: 85%;
+        min-height: 100px;
       }
 
       a {
@@ -724,10 +737,12 @@
           transition: background-color 0.25s, padding-right 0.25s;
           text-align: center;
 
-          p {
+          .textoBotonResultados {
+            min-height: 0;
             width: 50%;
             margin: 0%;
             margin-left: 20px;
+            top: 50px;
           }
         }
         button:hover p {

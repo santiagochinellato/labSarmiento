@@ -1498,6 +1498,8 @@
   text-align: center;
   margin: 0% auto 8%;
   width: 85%;
+  height: 100%;
+  min-height: 80px;
 }
 
 .resultados .contenedorCards .card a {
@@ -1530,6 +1532,8 @@
   margin: 0%;
   margin-left: 20px;
   color: #007462;
+  min-height: 0;
+  margin-top: 10px;
 }
 
 .resultados .contenedorCards .card a button:hover p {
@@ -1679,6 +1683,7 @@
     text-align: center;
     margin: 0% auto 5%;
     width: 85%;
+    min-height: 80px;
   }
   .resultados .contenedorCards .card a {
     width: 100%;
@@ -1705,6 +1710,8 @@
     width: 50%;
     margin: 0%;
     margin-left: 20px;
+    min-height: 0px;
+    margin-top: 15px;
   }
   .resultados .contenedorCards .card a button:hover p {
     color: #007462;
@@ -1854,6 +1861,7 @@
     text-align: center;
     margin: 0% auto 5%;
     width: 85%;
+    min-height: 80px;
   }
   .resultados .contenedorCards .card a {
     width: 100%;
@@ -1878,8 +1886,9 @@
   }
   .resultados .contenedorCards .card a button p {
     width: 50%;
-    margin: 0%;
     margin-left: 20px;
+    margin-top: 15px;
+    min-height: 0px;
   }
   .resultados .contenedorCards .card a button:hover p {
     color: #007462;
@@ -2017,6 +2026,7 @@
   }
   .resultados .cardCarousel {
     margin: 0 10px;
+    min-height: 269px;
     height: fit-content;
     border: 3px solid white;
     background-color: white;
@@ -2036,8 +2046,9 @@
     font-size: 1rem;
     color: #007462;
     text-align: center;
-    margin: 5% auto 5%;
+    margin: 10px auto 10px;
     width: 85%;
+    min-height: 100px;
   }
   .resultados .cardCarousel a {
     width: 100%;
@@ -2060,10 +2071,12 @@
     transition: background-color 0.25s, padding-right 0.25s;
     text-align: center;
   }
-  .resultados .cardCarousel a button p {
+  .resultados .cardCarousel a button .textoBotonResultados {
+    min-height: 0;
     width: 50%;
     margin: 0%;
     margin-left: 20px;
+    top: 50px;
   }
   .resultados .cardCarousel a button:hover p {
     color: #007462;
